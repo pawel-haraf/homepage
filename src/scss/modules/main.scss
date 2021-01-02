@@ -1,0 +1,20 @@
+
+/* Sekcja Main */
+.main {
+    width: 90vw;
+    margin: 80px auto;
+    &__description {
+      color: #6c757d;
+      background: #dee2e6;
+      width: 80vw;
+      text-align: center;
+      margin: 5px auto;
+      border-radius: 16px;
+    }
+    &__header {
+      width: 80vw;
+      margin: 10px auto;
+      color: #212529;
+      text-align: center;
+    }
+  }

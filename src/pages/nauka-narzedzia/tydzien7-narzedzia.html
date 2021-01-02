@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Będzie mały bonus...</title>
+    <link href="../../css/style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <!-- Nawigacja strony -->
+    <header class="header">
+      <nav class="navigation navigation--js">
+        <a
+          href="../../index.html"
+          class="navigation__link navigation__link--homepage"
+        >
+          Strona główna
+        </a>
+        <a href="../nauka-html.html" class="navigation__link">Nauka - HTML</a>
+        <a href="../nauka-css.html" class="navigation__link">Nauka - CSS</a>
+        <a href="../nauka-js.html" class="navigation__link">
+          Nauka - JavaScript
+        </a>
+        <a href="../nauka-narzedzia.html" class="navigation__link">
+          Nauka - Narzędzia
+        </a>
+      </nav>
+      <button class="hamburger hamburger--js" aria-label="Otwórz menu">
+        🍔
+      </button>
+    </header>
+    <!-- Część główna strony -->
+    <main>
+      <header id="top">
+        <h1 class="main__header">Moje narzędzia</h1>
+      </header>
+      <!-- Sekcja z notatkami-->
+      <section class="notes">
+        <h2 class="notes__header">Notatki WTF: Narzędzia</h2>
+        <!-- Notatki z tygodnia -->
+        <div class="diary">
+          <!-- Zawartość Sekcji -->
+          <section class="week">
+            <h3 class="week__header">Tydzień VII</h3>
+
+            <!-- Artykuły -->
+            <article class="article" id="1">
+              <h4 class="article__header">.gitignore</h4>
+
+              <p class="article__description">
+                Plik ten zawiera zestaw reguł, które pozwalają nam na
+                zdefiniowanie  list rzeczy, które nie powinny znaleźć się w
+                naszym repozytorium.
+              </p>
+              <p class="article__description">
+                Przykładowo mamy jakiś plik z hasłami.
+              </p>
+              <p class="article__description">
+                Definiujemy pliki, które nie mają wchodzić w skład repozytorium
+                poprzez  podanie ich nazwy w pliku .gitignore
+              </p>
+            </article>
+            <article class="article" id="2">
+              <h4 class="article__header">Node.js</h4>
+              <h5 class="article__header">Instalacja dla Windowsa</h5>
+              <p class="article__description">
+                Instalujemy Node.js ze strony:
+                <a class="article__link" href="nodejs.org">nodejs.org</a>
+              </p>
+              <h5 class="article__header">Dla ubuntu</h5>
+              <p class="article__description">
+                Żeby zainstalować node.js trzeba postępować w następujący
+                sposób:
+              </p>
+              <code class="code">
+                sudo apt-get update<br />
+                sudo apt-get install nodejs
+              </code>
+              <p class="article__description">
+                Żeby sprawdzić czy instalacja się powiodła możemy sprawdzić
+                wersję zainstalowaną:
+              </p>
+              <code class="code"> nodejs -v </code>
+              <p class="article__description">
+                node to taki JavaScript uruchamiany poza przeglądarką. Node.js
+                nie ma dostępu do DOM i do wszystkich api związanych z
+                przeglądarką. Nie ma query.selector'ów
+              </p>
+              <h5 class="article__header">Pierwszy program🙂</h5>
+              <p class="article__description">
+                Tworzymy prosty skrypt JavaScript'owy<br />
+                script.js
+              </p>
+              <code class="code">
+                const name = 'Paweł';<br />
+                console.log(`${name}`);<br />
+                console.log('hello node!');
+              </code>
+              <p class="article__description">
+                Żeby ten skrypt uruchomić w nodzie musimy wpisać komendę:
+              </p>
+              <code class="code"> node script.js </code>
+              <p class="article__description">
+                W nodzie można pisać tzw. backend. Czyli javaScript'owi
+                developerzy piszą całe aplikacje serwerowe i to działa :)
+              </p>
+            </article>
+            <article class="article" id="3">
+              <h4 class="article__header">NPM i NPX</h4>
+              <h5 class="article__header">NPM</h5>
+              <p class="article__description">
+                Nie jest to tłumaczone jako node package manager chociaż nim
+                jest.
+              </p>
+              <p class="article__description">
+                Czyli npm to menadżer paczek do noda. Zawiera on repozytorium, z
+                którego możemy pobrać programy pozwalające na usprawnienie nam
+                pracy. Dzięki nim łątwiej możemy budować nasz projekt.
+              </p>
+              <h5 class="article__header">Po co nam te paczki?</h5>
+              <ul class="list">
+                <li class="list__item">
+                  dodajemy do projektów sporo gotowych bibliotek / narzędzi
+                </li>
+                <li class="list__item">
+                  nie można polegać na konfiguracji edytora / jego wtyczkach
+                </li>
+                <li class="list__item">
+                  uniwersalne źródło ze wszystkimi narzędziami
+                </li>
+                <li class="list__item">dostęp do aktualizacji</li>
+              </ul>
+              <p class="article__description">
+                npm to taki app store / sklep play dla frontendowca<br />
+                npm to taka skrzynka z narzędziami, których możemy użyć w naszym
+                projekcie
+              </p>
+              <h5 class="article__header">No to zaczynamy😛</h5>
+              <p class="article__description">
+                Żeby zainstalować npm w ubuntu odpalamy:
+              </p>
+              <code class="code"> sudo apt install npm </code>
+              <p class="article__description">
+                Żeby odpalić npm'a dla danego projektu wpisujemy:
+              </p>
+              <code class="code"> npm init </code>
+              <p class="article__description">
+                Polecenie te wykonujemy tylko raz w projekcie i robimy je w celu
+                uzyskania dostępu do repozytoriów npm'a. Utworzy on nam plik
+                package.json
+              </p>
+              <p class="article__description">
+                Jeśli wpisemy npm init -y to utworzy również plik package.json ,
+                ale nie zada nam pytań o dane naszego projektu. Które wchodzą w
+                skład naszego pliku
+              </p>
+              <p class="article__description">
+                W package.json znajdują się informacje o naszym projekcie. Czyli
+                jego opis, wersja projektu, opis projektu, stosowane paczki itd.
+                Trzyma również informacje o tym jakie paczki są nam potrzebne
+                przy budowaniu naszego projektu.
+              </p>
+              <p class="article__description">
+                W package-lock.json znajdują się informacje o zainstalowanych
+                paczkach w projekcie i o wersji tych paczek. Te informacje są
+                ważna o tyle, żeby nam się projekt nie rozjeżdżał
+              </p>
+              <h5 class="article__header">Instalacja pakietów</h5>
+              <ul class="list">
+                <li class="list__item">
+                  <code class="code"> npm install --save </code>
+                  - używamy tej opcji jeśli coś ma być później widoczne w
+                  przeglądarce😛
+                  <ul class="list">
+                    <li class="list__item">
+                      <code class="code"> --save-dev </code>
+                      - używamy tej opcji jeśli instalujemy narzędzie, które
+                      będziemy używać tylko do rozwoju naszego projektu np.
+                      serwer lokalny
+                    </li>
+                  </ul>
+                </li>
+                <li class="list__item">
+                  <code class="code"> npm install </code>
+                  pozwala na ponowne zainstalowanie tych samych paczek
+                  zdefiniowanych w package.json (np. gdy nie mamy katalogu
+                  node_modules w którym są one przechowywane)
+                </li>
+              </ul>
+              <h5 class="article__header">Katalog node_modules</h5>
+              <p class="article__description">
+                Katalog, w którym przechowywane są wszystkie nasze paczki.
+              </p>
+              <p class="article__description">
+                Nie commitujemy katalogu node_modules. Każdy może zrobić npm
+                install i ściągnąć sobie wymagane paczki). Czyli dodajemy go do
+                pliku .gitignore<br />
+                .gitignore
+              </p>
+              <code class="code"> node_modules </code>
+              <h5 class="article__header">YARN</h5>
+              <p class="article__description">
+                Korzysta on z tej samej bazy co npm
+              </p>
+              <p class="article__description">
+                Często wykorzystywana jest przez developerów react'owych.
+                Domyślna paczka, która tworzy nam domyślnie aplikacje react'owe,
+                również korzysta z YARN'a
+              </p>
+              <h5 class="article__header">NPX</h5>
+              <p class="article__description">
+                Komendę npx wykorzystujemy przy uruchomieniu jakiegoś narzędzia.
+                Możemy uruchomić jakąś paczkę, bez instalowania jej.
+              </p>
+              <h5 class="article__header">Różne ciekawe paczki</h5>
+              <ul class="list">
+                <li class="list__item">normalize.css</li>
+                <li class="list__item">react</li>
+                <li class="list__item">cowsay</li>
+              </ul>
+            </article>
+            <article class="article" id="4">
+              <h4 class="article__header">NPM Scripts</h4>
+              <p class="article__description">
+                NPM skrypty są te komendy, które możemy sobie zdefiniować w
+                pliku package.json, który jest w naszym projekcie. Żeby dodać
+                taki skrypt, to w sekcji scripts definiujemy nazwę skryptu i
+                polecenie, które ma wykonać.  Na początek tworzymy skrypt:
+              </p>
+              <code class="code"> "start": "node script.js", </code>
+              <p class="article__description">
+                Żeby odpalić skrypt w konsoli wpisujemy:
+              </p>
+              <code class="code"> npm start </code>
+              <p class="article__description">
+                Dla skryptów opalanych npx (np. dla cowsay 😛) skrypt zapisujemy
+                podobnie :
+              </p>
+              <code class="code"> "cow": "cowsay hello world!", </code>
+              <p class="article__description">ale odpalamy je poleceniem:</p>
+              <code class="code"> npm run cow </code>
+            </article>
+            <article class="article" id="5">
+              <h4 class="article__header">SASS / SCSS</h4>
+              <p class="article__description">Problemy z CSS</p>
+              <ul class="list">
+                <li class="list__item">
+                  porozrzucane klasy (bałagan w plikach)
+                </li>
+                <li class="list__item">
+                  @media oddzielone od elementu (konieczność ponownego
+                  definiowania)
+                </li>
+                <li class="list__item">
+                  kiepska czytelność plików (szczególnie przy zagnieżdżeniach)
+                </li>
+                <li class="list__item">
+                  brak możliwości definiowania funkcji do robienia podobnych
+                  rzeczy
+                </li>
+              </ul>
+              <p class="article__description">
+                Dużą ilość tych problemów rozwiązują preprocesory. Jednym z
+                popularniejszych preprocesorów jest SASS (
+                <a
+                  class="article__link"
+                  href="https://sass-lang.com/documentation"
+                >
+                  Sass documentation
+                </a>
+                )
+              </p>
+              <p class="article__description">
+                SASS potrzebuje narzędzia do działania. Na tym etapie nie
+                będziemy instalować tego narzędzia. Na początku skupimy się na
+                zasadach działania tego narzędzia i jak go używać.
+              </p>
+              <h5 class="article__header">SASS vs SCSS</h5>
+              <p class="article__description">
+                SASS jest narzędziem, ma on swoją składnię i dodatkowo ma
+                składnię SCSS.
+              </p>
+              <p class="article__description">
+                Działanie preprocesorów polega na tym, że na początku piszemy
+                style w pliku .scss, a następnie program SASS zamienia to na
+                plik .css który jest zrozumiały dla przeglądarki. \
+              </p>
+              <h5 class="article__header">Sprawdźmy jak działa SASS</h5>
+              <p class="article__description">
+                <a class="article__link" href="https://www.sassmeister.com/">
+                  https://www.sassmeister.com/
+                </a>
+                na tej stronie będziemy pisać pierwszy swój kod scss 😛 Od razu
+                będziemy mieli widok jak to będzie wyglądało w kodzie css po
+                użyciu Sass
+              </p>
+              <p class="article__description">
+                Wszystko co zapisalibyśmy w css, zadziała również w Sass'ie
+              </p>
+              <h5 class="article__header">zmienne</h5>
+              <p class="article__description">
+                W SCSS'ie występują zmienne i żeby je zdefiniować używamy
+                znaczka $. Zmienne te nie będą się przepisywać do CSS, tylko
+                będą wykorzystywane w SCSS.
+              </p>
+              <code class="code"> $myFavouriteGrey: #ccc; </code>
+              <p class="article__description">
+                Wszędzie, gdzie dana zmienna będzie wykorzystana w kodzie, to
+                będzie automatycznie uzupełniana jej wartość w kodzie css. Np.
+              </p>
+              <code class="code"> color: $myFavouriteGrey; </code>
+              <h5 class="article__header">@mixin</h5>
+              <p class="article__description">
+                Jest to funkcja w której możemy zdefiniować kilka własności i
+                później móc je szybko zastosować w kodzie.
+              </p>
+              <code class="code">
+                @mixin borderBackground {<br />
+                border-radius: 10px;<br />
+                background: hotpink;<br />
+                }
+              </code>
+              <p class="article__description">
+                Żeby wywołać własności z @mixin'a przywołujemy go poprzez
+                <strong>include</strong>
+              </p>
+              <code class="code"> include borderBackground </code>
+              <p class="article__description">
+                Możemy również Mixin'em definiować parametry:
+              </p>
+              <code class="code">
+                @mixin borderBackgroundParameter($radius, $background) {<br />
+                border-radius: $radius;<br />
+                background: $background;<br />
+                }<br />
+                <br />
+                @include borderBackgroundParameter(20px, yellow)
+              </code>
+              <h5 class="article__header">@extend</h5>
+              <p class="article__description">
+                Pozwala na zaimportowanie stylów użytych przy innym selektorze.
+              </p>
+              <code class="code"> @extend .font-style; </code>
+              <p class="article__description">
+                Nasz plik scss'owy wygląda następująco:
+              </p>
+              <code class="code">
+                $myFavouriteGrey: #ccc;<br />
+                $tablet: 768px;<br />
+                $desktop: 1024px;<br />
+                <br />
+                @mixin borderBackground {<br />
+                border-radius: 10px;<br />
+                background: hotpink;<br />
+                }<br />
+                <br />
+                @mixin borderBackgroundParameter($radius, $background) {<br />
+                border-radius: $radius;<br />
+                background: $background;<br />
+                }<br />
+                <br />
+                .font-style {<br />
+                font-size: 13px;<br />
+                color: green;<br />
+                }<br />
+                <br />
+                .main {<br />
+                color: $myFavouriteGrey;<br />
+                @include borderBackground;<br />
+                @extend .font-style;<br />
+                }<br />
+                <br />
+                .main::before {<br />
+                fron-size: 20px;<br />
+                content: 'hi';<br />
+                }<br />
+                <br />
+                @media (min-width: $desktop) {<br />
+                .main {<br />
+                color: red;<br />
+                @include borderBackgroundParameter(20px, yellow);<br />
+                }<br />
+                }
+              </code>
+              <p class="article__description">
+                dla porównania plik css będzie wyglądał następująco
+              </p>
+              <code class="code">
+                .font-style, .main {<br />
+                font-size: 13px;<br />
+                color: green;<br />
+                }<br />
+                <br />
+                .main {<br />
+                color: #ccc;<br />
+                border-radius: 10px;<br />
+                background: hotpink;<br />
+                }<br />
+                <br />
+                .main::before {<br />
+                fron-size: 20px;<br />
+                content: "hi";<br />
+                }<br />
+                <br />
+                @media (min-width: 1024px) {<br />
+                .main {<br />
+                color: red;<br />
+                border-radius: 20px;<br />
+                background: yellow;<br />
+                }<br />
+                }
+              </code>
+              <h5 class="article__header">& parent selector</h5>
+              <p class="article__description">
+                Pozwala na zapisanie jednej grupy BEM'owej w jednym miejscu.
+                Poprzez zagnieżdżanie własności, mamy wszystko w jednym miejscu,
+                a preprocesor zamieni to na czytelny kod dla przeglądarki.
+              </p>
+              <p class="article__description">SCSS</p>
+              <code class="code">
+                .about-sass {<br />
+                color: red;<br />
+                &__title {<br />
+                font-size: 20px;<br />
+                &--smaller {<br />
+                font-size: 16px;<br />
+                }<br />
+                }<br />
+                @media (max-width: 768px) {<br />
+                .about__title {<br />
+                font-size: 18px;<br />
+                }<br />
+                }
+              </code>
+              <p class="article__description">CSS</p>
+              <code class="code">
+                .about-sass {<br />
+                color: red;<br />
+                }<br />
+                .about-sass__title {<br />
+                font-size: 20px;<br />
+                }<br />
+                .about-sass__title--smaller {<br />
+                font-size: 16px;<br />
+                }<br />
+                @media (max-width: 768px) {<br />
+                .about-sass .about__title {<br />
+                font-size: 18px;<br />
+                }<br />
+                }
+              </code>
+              <p class="article__description">
+                Kiedy korzystamy z preprocesorów nie edytujemy plików wynikowych
+                .css
+              </p>
+            </article>
+            <article class="article" id="6">
+              <h4 class="article__header">node-sass</h4>
+              <p class="article__description">
+                Instalujemy paczkę node-sass , która pozwoli nam z skorzystać z
+                SCSS w naszym projekcie homepage.
+              </p>
+              <code class="code"> npm install node-sass </code>
+              <p class="article__description">
+                Żeby node-sass podmienił utworzony plik scss na plik css
+                wpisujemy polecenie:
+              </p>
+              <code class="code">
+                npx node-sass scss/main.scss css/main.css
+              </code>
+              <p class="article__description">
+                Istnieje również funkcja śledzenia zmian w pliku scss i
+                automatycznie nadpisywanie pliku css. jest to możliwe poprzez
+                dodanie flagi -w (watch) do kodu node-sass.
+              </p>
+              <code class="code">
+                npx node-sass -w scss/main.scss css/main.css
+              </code>
+              <h5 class="article__header">Skrypt node-sass</h5>
+              <p class="article__description">
+                Dodajemy skrypt do package.json, żeby ułatwić sobie i
+                przyspieszyć pracę.
+              </p>
+              <code class="code">
+                "sass": "npx node-sass -w scss/main.scss css/main.css",
+              </code>
+              <p class="article__description">
+                Żeby wykonać skrypt w terminalu wpisujemy:
+              </p>
+              <code class="code"> npm run sass </code>
+            </article>
+          </section>
+        </div>
+        <!-- Menu boczne-->
+        <section class="aside">
+          <h3 class="aside__header">Spis treści</h3>
+          <nav class="aside__navigation">
+            <a href="#1" class="aside__link">.gitignore</a>
+            <a href="#2" class="aside__link">Node.js</a>
+            <a href="#3" class="aside__link">NPM i NPX</a>
+            <a href="#4" class="aside__link">NPM Scripts</a>
+            <a href="#5" class="aside__link">SASS / SCSS</a>
+            <a href="#6" class="aside__link">node-sass</a>
+          </nav>
+        </section>
+      </section>
+    </main>
+    <!-- Stopka -->
+    <footer class="footer">
+      <p class="footer__description">
+        Mój pierwszy internetowy dziennik. Anno domini 2020 r.
+      </p>
+      <a href="#top" class="footer__link">Do góry strony.</a>
+    </footer>
+    <!-- Skrypt JavaScript -->
+    <script src="../../js/hamburger.js"></script>
+  </body>
+</html>

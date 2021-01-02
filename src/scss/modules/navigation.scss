@@ -1,0 +1,70 @@
+
+/* Hamburger menu */
+
+.hamburger {
+    position: absolute;
+    top: 20x;
+    right: 10px;
+    border: none;
+    background: none;
+    @media (min-width: 768px) {
+      display: none;
+    }
+  }
+
+  .klasa-z-js {
+    background: yellow;
+  }
+
+  /* nagłówek - nawigacja */
+  .header {
+    background: #fefefe;
+    top: 0;
+    width: 100vw;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    min-height: 60px;
+  }
+
+/* Nawigacja - nagłówek */
+.navigation {
+  padding: 16px;
+  display: none;
+  background: #212529;
+  &__link {
+    color: #e9ecef;
+    display: block;
+    margin: 0 0 16px 0;
+    &--homepage {
+      background: #e9ecef;
+      color: #343a40;
+    }
+    &:hover {
+      color: yellow;
+    }
+  }
+  &--open {
+    display: block;
+  }
+  @media (min-width: 768px) {
+    width: 90%;
+    background: #212529;
+    padding: 16px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    &__link {
+      color: #e9ecef;
+      display: inline-block;
+      margin-right: 20px;
+      &--homepage {
+        background: #e9ecef;
+        color: #343a40;
+      }
+    }
+  }
+}

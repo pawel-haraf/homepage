@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Będzie mały bonus...</title>
+    <link href="../../css/style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <!-- Nawigacja strony -->
+    <header class="header">
+      <nav class="navigation navigation--js">
+        <a
+          href="../../index.html"
+          class="navigation__link navigation__link--homepage"
+        >
+          Strona główna
+        </a>
+        <a href="../nauka-html.html" class="navigation__link">Nauka - HTML</a>
+        <a href="../nauka-css.html" class="navigation__link">Nauka - CSS</a>
+        <a href="../nauka-js.html" class="navigation__link">
+          Nauka - JavaScript
+        </a>
+        <a href="../nauka-narzedzia.html" class="navigation__link">
+          Nauka - Narzędzia
+        </a>
+      </nav>
+      <button class="hamburger hamburger--js" aria-label="Otwórz menu">
+        🍔
+      </button>
+    </header>
+    <!-- Część główna strony -->
+    <main>
+      <header id="top">
+        <h1 class="main__header">Moje postępy w nauce JavaScript'u</h1>
+      </header>
+      <!-- Sekcja z notatkami-->
+      <section class="notes">
+        <h2 class="notes__header">Notatki WTF: JavaScript</h2>
+        <!-- Notatki z tygodnia -->
+        <div class="diary">
+          <img class="notes__image" src="../../img/js.png" alt="logo Js" />
+          <!-- Zawartość Sekcji -->
+          <section class="week">
+            <h3 class="week__header">Tydzień VIII</h3>
+            <!-- Artykuły -->
+            <article class="article" id="1">
+              <h4 class="article__header">JS: Import / Export</h4>
+              <h5 class="article__header">CommonJS vs ES6 Modules</h5>
+              <p class="article__description">
+                My będziemy najczęściej korzystać z ES6 Modules.
+              </p>
+              <p class="article__description">
+                CommonJS najczęściej wykorzystywane w node'zie.
+              </p>
+              <p class="article__description">
+                Żeby móc korzystać z dobroci modułów musimy do naszego znacznika
+                <code class="code">script</code>
+                dopisać atrybut <code class="code">type=module</code>
+              </p>
+              <h5 class="article__header">Eksport nazwany</h5>
+              <p class="article__description">
+                W kodzie JavaScript musimy zaznaczyć co chcemy wyeksportować
+                (funkcję, zmienną). Robimy to poprzez dopisanie export przed
+                naszym fragmentem kodu przeznaczonym do eksportu np.
+              </p>
+              <code class="code">
+                export const hello = (name) => {<br />
+                return `Cześć ${name}`;<br />
+                }<br />
+                <br />
+                export const korsi = 'Maciek'
+              </code>
+              <p class="article__description">
+                Następnie zaznaczamy po słowie import co chcemy zaimportować do
+                naszego kodu:
+              </p>
+              <code class="code">
+                import {hello, korsi} from './hello.js';<br />
+                console.log(hello(korsi));
+              </code>
+              <code class="code">
+                import {pierwszy, drugi} from 'nazwa-modułu' import {pierwszy,
+                drugi} from 'ścieżka/do/pliku'
+              </code>
+              <p class="article__description">
+                Jeśli chcemy zmienić nazwę w imporcie nazwanym, to stosujemy
+                składnie:
+              </p>
+              <code class="code">
+                import {bardzoDługaNazwa as pierwszy} from ...
+              </code>
+              <h5 class="article__header">Eksport domyślny</h5>
+              <p class="article__description">
+                Działa w taki sposób, że nie musimy na sztywno definiować nazwy
+                rzeczy, która chcemy zaimportować. Wystarczy mieć domyślną
+                nazwę, która umożliwi zaimportowanie odpowiedniego skryptu.
+              </p>
+              <code class="code">
+                import human from './maciek';<br />
+                <br />
+                console.log(human);
+              </code>
+              <code class="code">
+                import nazwaRzeczy from 'nazwa-modułu'<br />
+                <br />
+                import nazwaRzeczy from 'ścieżka/do/pliku
+              </code>
+              <p class="article__description">
+                <code class="code"> import * as newName from ... </code>
+                Pozwala nam zaimportowanie wszystkich importów z danego pliku .
+                Importuje je jako obiekt pod jedną zmienną.
+              </p>
+            </article>
+          </section>
+        </div>
+        <!-- Menu boczne-->
+        <section class="aside">
+          <h3 class="aside__header">Spis treści</h3>
+          <nav class="aside__navigation">
+            <a href="#1" class="aside__link">
+                JS: Import / Export
+            </a>
+          </nav>
+        </section>
+      </section>
+    </main>
+    <!-- Stopka -->
+    <footer class="footer">
+      <p class="footer__description">
+        Mój pierwszy internetowy dziennik. Anno domini 2020 r.
+      </p>
+      <a href="#top" class="footer__link">Do góry strony.</a>
+    </footer>
+    <!-- Skrypt JavaScript -->
+    <script src="../../js/hamburger.js"></script>
+  </body>
+</html>

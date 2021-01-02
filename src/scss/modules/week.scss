@@ -1,0 +1,41 @@
+/* Tygodnie nauki*/
+.week {
+    width: 85vw;
+    background: #f8f9fa;
+    border: 1px #06021d solid;
+    border-radius: 8px;
+    margin: 10px 0 10px 10px;
+    &__description {
+      color: #36413e;
+      text-align: justify;
+      padding: 16px;
+    }
+    &__header {
+      color: #212529;
+      margin: 10px auto;
+      text-align: center;
+      &::before {
+        content: "😎";
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+        background-color: red;
+        border-radius: 50%;
+      }
+      &::after {
+        content: "😎";
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+        background-color: red;
+        border-radius: 50%;
+      }
+    }
+    @media (min-width: 768px) {
+      width: 60vw;
+      background: #f8f9fa;
+      border: 1px #06021d solid;
+      border-radius: 8px;
+      margin: 10px 0 10px 10px;
+    }
+  }

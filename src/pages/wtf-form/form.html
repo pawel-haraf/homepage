@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Będzie mały bonus...</title>
+    <link href="../../css/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <!-- Nawigacja strony -->
+    <header class="header">
+        <nav class="navigation navigation--js">
+            <a href="../../index.html" class="navigation__link navigation__link--homepage">Strona główna</a>
+            <a href="../pages/nauka-html.html" class="navigation__link">Nauka - HTML</a>
+            <a href="../pages/nauka-css.html" class="navigation__link">Nauka - CSS</a>
+            <a href="../pages/nauka-js.html" class="navigation__link">Nauka - JavaScript</a>
+            <a href="../pages/nauka-narzedzia.html" class="navigation__link">Nauka - Narzędzia</a>
+        </nav>
+        <button class="hamburger hamburger--js" aria-label="Otwórz menu">
+            🍔
+        </button>
+    </header>
+    <!-- Część główna strony -->
+    <main class="main">
+        <header id="top">
+            <h1 class="main__header main__header--js" id="name">
+                Formularz
+            </h1>
+        </header>
+        <!-- Sekcja O mnie-->
+        <form class="form" action="http://dev.cotenfrontend.pl" method="POST">
+            <p>
+                <label>
+                    Twoje imię:
+                    <input id="firstName" name="firstName" placeholder="Wpisz swoje imię">
+                </label>
+            </p>
+            <p>
+                <label>
+                    Twoje nazwisko:
+                    <input id="lastName" name="lastName" placeholder="Wpisz swoje nazwisko">
+                </label>
+            </p>
+            <p>
+                <input type="submit">
+            </p>
+        </form>
+    </main>
+    <!-- Stopka -->
+    <footer class="footer">
+        <p class="footer__description">
+            Mój pierwszy internetowy dziennik. Anno domini 2020 r.
+        </p>
+        <a href="#top" class="footer__link">Do góry strony.</a>
+    </footer>
+    <!-- Skrypt JavaScript -->
+    <script src="../../js/hamburger.js"></script>
+</body>
+
+</html>

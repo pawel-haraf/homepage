@@ -1,13 +1,39 @@
-@import "~normalize.css";
+@import "modules/about.scss";
 
-@import "_variables";
-@import "modules/hello.scss";
+@import "modules/article.scss";
 
-body {
-  background: $wtf;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
+@import "modules/aside.scss";
+
+@import "modules/body.scss";
+
+@import "modules/code.scss";
+
+@import "modules/diary.scss";
+
+@import "modules/footer.scss";
+
+@import "modules/list.scss";
+
+@import "modules/main.scss";
+
+@import "modules/navigation.scss";
+
+@import "modules/notes.scss";
+
+@import "modules/selector.scss";
+
+@import "modules/table.scss";
+
+@import "modules/week.scss";
+
+@import "https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css";
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }

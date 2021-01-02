@@ -1,0 +1,40 @@
+
+/* Notesy */
+.notes {
+    background: #6c757d;
+    width: 90vw;
+    margin: 10px auto;
+    border-radius: 8px;
+    &__header {
+      color: #ced4da;
+      margin: 10px auto;
+      text-align: center;
+      justify-self: center;
+    }
+    &__image {
+      display: block;
+      margin: 45px auto 0;
+    }
+    @media (min-width: 768px) {
+      background: #6c757d;
+      width: 90vw;
+      margin: 10px auto;
+      border-radius: 8px;
+      display: grid;
+      grid-template-areas:
+        "header header"
+        "diary aside";
+      &__header {
+        color: #ced4da;
+        margin: 10px auto;
+        grid-area: header;
+        text-align: center;
+        justify-self: center;
+      }
+      &__image {
+        display: block;
+        margin: 45px auto 0;
+        grid-area: header;
+      }
+    }
+  }

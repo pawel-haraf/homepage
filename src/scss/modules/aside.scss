@@ -1,0 +1,48 @@
+/* menu boczne */
+.aside {
+    position: sticky;
+    top: 90px;
+    margin: 10px;
+    height: 70vh;
+    max-width: 200px;
+    width: 25vw;
+    background-color: #f8f9fa;
+    border: 1px solid #06021d;
+    border-radius: 8px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    color: #212529;
+    grid-area: aside;
+    &__header {
+      color: #343a40;
+      margin: 2px;
+    }
+    &__navigation {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-self: center;
+      text-align: center;
+    }
+    &__link {
+      font-size: 12px;
+      color: #343a40;
+      margin-bottom: 5px;
+    }
+    @media (min-width: 768px) {
+      position: sticky;
+      top: 90px;
+      margin: 10px;
+      height: 70vh;
+      width: 25vw;
+      background-color: #f8f9fa;
+      border: 1px solid #06021d;
+      border-radius: 8px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: #212529;
+      grid-area: aside;
+    }
+  }

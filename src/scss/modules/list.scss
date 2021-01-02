@@ -1,0 +1,31 @@
+
+/* Lista haseł */
+.description-list {
+    color: #212529;
+    margin: 10px auto;
+    width: 53vw;
+    text-align: justify;
+    &__term {
+      margin: 10px 2px;
+    }
+  }
+
+/* listy */
+.list {
+    width: 80%;
+    margin: 10px auto;
+    padding-bottom: 16px;
+    text-align: justify;
+    color: #212529;
+    &__image {
+      display: block;
+      margin: 10px auto;
+      width: 100%;
+    }
+    &__item {
+      list-style: square;
+    }
+    &__link {
+      color: #343a40;
+    }
+  }
