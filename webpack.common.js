@@ -114,6 +114,8 @@ module.exports = {
       chunks: ["index", "hamburger"],
       filename: "nauka-narzedzia.html",
     }),
+
+    // Nauka CSS
     new HtmlWebpackPlugin({
       template: "./src/pages/nauka-css/tydzien2-css.html",
       inject: true,
@@ -156,6 +158,8 @@ module.exports = {
       chunks: ["index", "hamburger"],
       filename: "tydzien8-css.html",
     }),
+
+    // Nauka HTML'a
     new HtmlWebpackPlugin({
       template: "./src/pages/nauka-html/tydzien2-html.html",
       inject: true,
@@ -180,6 +184,8 @@ module.exports = {
       chunks: ["index", "hamburger"],
       filename: "tydzien6-html.html",
     }),
+
+    // Nauka JavaScript'u
     new HtmlWebpackPlugin({
       template: "./src/pages/nauka-js/tydzien3-js.html",
       inject: true,
@@ -210,6 +216,8 @@ module.exports = {
       chunks: ["index", "hamburger"],
       filename: "tydzien8-js.html",
     }),
+
+    // Narzędzia frontendowca
     new HtmlWebpackPlugin({
       template: "./src/pages/nauka-narzedzia/tydzien1-narzedzia.html",
       inject: true,
