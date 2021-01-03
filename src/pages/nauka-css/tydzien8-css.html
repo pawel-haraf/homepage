@@ -65,6 +65,50 @@
               <h5 class="article__header">Import w (s)css</h5>
               <code class="code"> @import "modules/week.scss"; </code>
             </article>
+            <article class="article">
+              <h4 class="article__header">
+                CSS: Zmienne
+              </h4>
+              <h5 class="article__header">
+                CSS Custom Properties
+              </h5>
+              <p class="article__description">
+                Do wykorzystania zmiennych  CSS'owych (CSS Custom Properties) wykorzystujemy pseudoselektor :root
+              </p>
+              <p class="article__description">
+                Zmienną definiujemy poprzez dwa myślniki i nazwa zmiennej (--zmienna)
+              </p>
+              <p class="article__description">
+                Definiujemy w :root, wartość - dowolna wartość możliwa w CSS
+              </p>
+              <code class="code">
+                :root {<br>
+                  --small-padding: 8px;<br>
+                }
+              </code>
+              <p class="article__description">
+                Żeby pobrać wartość z tej zmiennej musimy użyć słówka var i nazwy zmiennej (var(--zmienna):
+              </p>
+              <code class="code">
+                h1 {<br>
+                  padding: var(--small-padding);<br>
+                }
+              </code>
+              <p class="article__description">
+                Możemy zmieniać wartość zmiennych CSS'owych za pomocą JavaScriptu:
+              </p>
+              <code class="code">
+                document.documentElement.style.setProperty('--zmienna', 'wartość')
+              </code>
+              <p class="article__description">
+                Za pomocą media queries możemy nadpisywać (zmieniać) wartość naszych zmniennych
+              </p>
+              <code class="code">
+                @media (min-width:756px) {<br>
+                  --small-padding: 16px;<br>
+                }
+              </code>
+            </article>
           </section>
         </div>
         <!-- Menu boczne-->
