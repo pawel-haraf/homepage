@@ -211,3 +211,18 @@ const myClik = () => {
 
 button.addEventListener("click", myClik);
 
+// Moment
+
+import moment from 'moment';
+
+console.log(moment().format('MMMM Do YYYY, h:mm:ss a'));
+
+function moment1(querySelectorContent, content) {
+  const element = document.querySelector(querySelectorContent);
+  element.innerHTML = content;
+}
+
+const paragraph1 = ".main__description--moment";
+const content1 = `Na stronie zalogowałeś się: ${moment().format('LLL')}`;
+
+moment1(paragraph1, content1);
