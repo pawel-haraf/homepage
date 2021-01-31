@@ -158,6 +158,12 @@ module.exports = {
       chunks: ["index", "hamburger"],
       filename: "tydzien8-css.html",
     }),
+    new HtmlWebpackPlugin({
+      template: "./src/pages/nauka-css/tydzien9-css.html",
+      inject: true,
+      chunks: ["index", "hamburger"],
+      filename: "tydzien9-css.html",
+    }),
 
     // Nauka HTML'a
     new HtmlWebpackPlugin({
