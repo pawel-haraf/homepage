@@ -272,5 +272,11 @@ module.exports = {
       chunks: ["index", "hamburger"],
       filename: "tydzien8-narzedzia.html",
     }),
+    new HtmlWebpackPlugin({
+      template: "./src/pages/nauka-narzedzia/tydzien9-narzedzia.html",
+      inject: true,
+      chunks: ["index", "hamburger"],
+      filename: "tydzien9-narzedzia.html",
+    }),
   ],
 };
