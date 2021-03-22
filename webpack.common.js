@@ -222,6 +222,12 @@ module.exports = {
       chunks: ["index", "hamburger"],
       filename: "tydzien8-js.html",
     }),
+    new HtmlWebpackPlugin({
+      template: "./src/pages/nauka-js/tydzien9-js.html",
+      inject: true,
+      chunks: ["index", "hamburger"],
+      filename: "tydzien9-js.html",
+    }),
 
     // Narzędzia frontendowca
     new HtmlWebpackPlugin({
