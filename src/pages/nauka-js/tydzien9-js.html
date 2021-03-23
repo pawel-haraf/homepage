@@ -156,6 +156,91 @@
                 console.log(myArray); // [';)'];
               </code>
             </article>
+            <article class="article" id="2">
+              <h4 class="article__header">JavaScript: Pętle</h4>
+              <h5 class="article__header">Po co nam pętle (loops)?</h5>
+              <p class="article__description">
+                Pętli używamy dla rzeczy, które muszą się ileś razy wykonać, aż
+                osiągniemy żądany efekt.
+              </p>
+              <h5 class="article__header">Pętla for</h5>
+              <code class="code">
+                for (inicjalizacja; warunek stopu; wyrażenie inkrementacji) {<br />
+                kod<br />
+                }
+              </code>
+              <p class="article__description">i - licznik pętli</p>
+              <p class="article__description">Przykład:</p>
+              <code class="code">
+                for (let i = 0; i < 3; i++) {<br />
+                console.log(`${i} wykonanie pętli`);<br />
+                }
+              </code>
+              <p class="article__description">
+                Ważne! Jeśli zaczniemy pętle od zera, to liczba w podana w
+                warunku stopu (i < 3) będzie określać ilość kroków.
+              </p>
+              <ul class="list">
+                <li class="list__item">i++ - postinkrementacja</li>
+                <li class="list__item">
+                  i-- - postdekrementacja - zmniejszenie wartości
+                </li>
+                <li class="list__item">++i - preinkrementacja</li>
+                <li class="list__item">--i - predekrementacja</li>
+              </ul>
+              <h5 class="article__header">Pętla while</h5>
+              <code class="code">
+                while(warunek logiczny) {<br />
+                kod<br />
+                }
+              </code>
+              <p class="article__description">Przykład:</p>
+              <code class="code">
+                let n =3;<br />
+                while (n < 9) {<br />
+                console.log(n);<br />
+                n = n + 3;<br />
+                }<br />
+                console.log(n);
+              </code>
+              <h5 class="article__header">Pętla do while</h5>
+              <code class="code">
+                do {<br />
+                kod<br />
+                } while (warunek logiczny)
+              </code>
+              <p class="article__description">Przykład:</p>
+              <code class="code">
+                let n = 9;<br />
+                do {<br />
+                console.log(n);<br />
+                n = n + 3;<br />
+                } while (n < 9);<br />
+                console.log(n);
+              </code>
+              <h5 class="article__header">Pętla for in</h5>
+              <code class="code"> for (własność in obiekt) </code>
+              <p class="article__description">Przykład:</p>
+              <code class="code">
+                const person = {<br />
+                name: 'Maciek',<br />
+                age: 31<br />
+                }<br />
+                for (let propertyName in person) {<br />
+                console.log(`${propertyName}: ${propertyName}:
+                ${person[propertyName]}`);<br />
+                }
+              </code>
+              <h5 class="article__header">Pętla for of</h5>
+              <code class="code"> for (element of tablica) </code>
+              <p class="article__description">Przykład:</p>
+              <code class="code">
+                const elements = [':B', ':P', ';)'];<br />
+                for (let element of elements) {<br />
+                console.log(element);<br />
+                }
+              </code>
+            </article>
           </section>
         </div>
         <!-- Menu boczne-->
@@ -163,6 +248,7 @@
           <h3 class="aside__header">Spis treści</h3>
           <nav class="aside__navigation">
             <a href="#1" class="aside__link">JavaScript: Tablice</a>
+            <a href="#2" class="aside__link">JavaScript: Pętle</a>
           </nav>
         </section>
       </section>
