@@ -172,13 +172,13 @@
               <p class="article__description">i - licznik pętli</p>
               <p class="article__description">Przykład:</p>
               <code class="code">
-                for (let i = 0; i < 3; i++) {<br />
+                for (let i = 0; i &lt; 3; i++) {<br />
                 console.log(`${i} wykonanie pętli`);<br />
                 }
               </code>
               <p class="article__description">
                 Ważne! Jeśli zaczniemy pętle od zera, to liczba w podana w
-                warunku stopu (i < 3) będzie określać ilość kroków.
+                warunku stopu (i &lt; 3) będzie określać ilość kroków.
               </p>
               <ul class="list">
                 <li class="list__item">i++ - postinkrementacja</li>
@@ -197,7 +197,7 @@
               <p class="article__description">Przykład:</p>
               <code class="code">
                 let n =3;<br />
-                while (n < 9) {<br />
+                while (n &lt; 9) {<br />
                 console.log(n);<br />
                 n = n + 3;<br />
                 }<br />
@@ -215,7 +215,7 @@
                 do {<br />
                 console.log(n);<br />
                 n = n + 3;<br />
-                } while (n < 9);<br />
+                } while (n &lt; 9);<br />
                 console.log(n);
               </code>
               <h5 class="article__header">Pętla for in</h5>
@@ -241,6 +241,38 @@
                 }
               </code>
             </article>
+            <article class="article" id="3">
+              <h4 class="article__header">JavaScript: Przechowywanie danych</h4>
+              <h5 class="article__header">Cookies</h5>
+              <p class="article__description">
+                Na początku dane przechowywane były w ciasteczkach (cookies).
+              </p>
+              <p class="article__description">
+                Ciastka możemy podejrzeć po obiektem document.cookie jakie są
+                używane na danej stronie.
+              </p>
+              <h6 class="article__header">Format zapisu ciastka</h6>
+              <code class="code">dokument.cookie = "nazwa = wartość"</code>
+              <h5 class="article__header">Local / session storage</h5>
+              <h6 class="article__header">localstorage</h6>
+              <p class="article__description">
+                Jest to rodzaj pamięci, którą trzeba ręcznie wyczyścić.
+              </p>
+              <code class="code"> localStorage.setItem('nazwa', wartosc) </code>
+              <h6 class="article__header">sessionstorage</h6>
+              <p class="article__description">
+                Żyje ta pamięć do zamknięcia karty przeglądarki.
+              </p>
+              <h6 class="article__header">JSON.stringify(obiekt)</h6>
+              <p class="article__description">
+                Funkcja ta umożliwia na zapisanie obiektu jako string, a co za
+                tym idzie. Mamy możliwość umieszczenia obiektu w localstorage.
+              </p>
+              <h6 class="article__header">JSON.parse(JSONString)</h6>
+              <p class="article__description">
+                Funkcja umożliwia na odkodowanie stringa jako obiekt
+              </p>
+            </article>
           </section>
         </div>
         <!-- Menu boczne-->
@@ -249,6 +281,9 @@
           <nav class="aside__navigation">
             <a href="#1" class="aside__link">JavaScript: Tablice</a>
             <a href="#2" class="aside__link">JavaScript: Pętle</a>
+            <a href="#3" class="aside__link"
+              >JavaScript: Przechowywanie danych</a
+            >
           </nav>
         </section>
       </section>

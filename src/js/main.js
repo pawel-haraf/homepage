@@ -226,3 +226,41 @@ const paragraph1 = ".main__description--moment";
 const content1 = `Na stronie zalogowałeś się: ${moment().format('LLL')}`;
 
 moment1(paragraph1, content1);
+
+// Cookies
+document.cookie = 'name = pawel';
+document.cookie = 'test = wtf';
+
+// Local / session storage
+localStorage.setItem('human', `pawel`)//dodaje dane do local storage
+console.log(localStorage.getItem('human'));// pobieranie danych z local storage
+localStorage.removeItem('human');//usuwa dane z local storage
+// Dodawanie obiektów do local storage
+
+localStorage.setItem('nowyKlucz', JSON.stringify({name: 'pawel'}));
+const myResult3 = localStorage.getItem('nowyKlucz');
+
+const myNewObject = JSON.parse(myResult3)
+
+myNewObject.newProperty = 'hi'
+console.log(myNewObject);
+
+// Jak powinno się wykonywać localstorage
+const entry = localStorage.getItem('entry');
+let result = "";
+
+if (entry) {
+  console.log(`wartość entry: ${entry}`);
+  result = entry;
+}
+
+const entryInput = document.querySelector('.entry--js');
+entryInput.value = result;
+
+const button1 = document.querySelector('.action1--js');
+
+console.log(button1);
+
+button1.addEventListener('click', () => {
+  localStorage.setItem('entry', entryInput.value);
+});
