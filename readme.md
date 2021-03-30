@@ -1,4 +1,4 @@
-![cover](./laptop-szkic)
+![cover](./src/assets/img/laptop-szkic.jpg)
 
 # Homepage - Mój dziennik nauki frontendu
 
