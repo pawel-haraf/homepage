@@ -1,4 +1,4 @@
-![cover](./src/assets/img/laptop-szkic.jpg)
+![cover](https://github.com/pawel-haraf/homepage/blob/master/src/assets/img/laptop-szkic.jpg)
 
 # Homepage - Mój dziennik nauki frontendu
 
