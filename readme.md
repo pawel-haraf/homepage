@@ -1,18 +1,18 @@
 ![cover](https://cotenfrontend.pl/img/cover.png)
 
-# WTF Webpack Starter Kit 
+# Homepage - Mój dziennik nauki frontendu
 
-Simple toolkit for your static websites development.
+Strona rozwijana jest za pomocą narzędzie WTF Webpack Starter Kit od Maćka Korsana.
 
-## How to use it?
+## Jak uruchomić projekt
 
-Click on `Use this template` button to generate a new repository based on this starter kit. After that clone it to your computer, go to the project directory in console and type `npm install`.
+Kliknij `Code` żeby wygenerować adres do repozytorium. Następnie sklonuj je na swój komputer i w katalogu pojektu w konsoli wpisz `npm install`.
 
-## Available scripts
+## Dostępne skrypty
 
-`npm run start` - runs development mode
+`npm run start` - uruchamia tryb developerski
 
-`npm run build` - runs build process for production
+`npm run build` - tworzy pliki gotowe do publikacji
 
-`npm run publish` - runs build process and publish the page using `gh-pages` branch
+`npm run publish` - tworzy pliki gotowe do publikacji i publikuje je na `gh-pages` branch
 
