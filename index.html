@@ -9,20 +9,32 @@
 </head>
 
 <body>
+	<header>
+		<nav>
+			<a href="index.html">Strona główna</a>
+			<a href="nauka-html.html">Nauka HTML'a</a>
+		</nav>
+	</header>
 	<main>
-		<header>
+		<header id="top">
 			<h1>Paweł Haraf - strona domowa</h1>
 		</header>
 		<section>
 			<h2>Kim jestem?</h2>
+			<img src="haraf-header.jpg" alt="Zdjęcie autora strony">
 			<p>
 				To są moje pierwsze kroki w frontendzie. Do tej pory moja praca, w ogóle nie była z tym związana.
 				Obecnie
-				jestem sztygarem w ZG Sobieski i mieszkam w Jaworznie. Obecnie dołączyłem do szkolenia WTF: Co ten
-				frontend
-				prowadzonego przez Maćka Korsana. Będę tutaj zamieszczał kolejne wpisy, w których będę informował o tym
+				jestem sztygarem w ZG Sobieski i mieszkam w Jaworznie. <br>Obecnie dołączyłem do szkolenia <a
+					href="https://cotenfrontend.pl" target="_blank">WTF: Co ten
+					frontend</a>
+				prowadzonego przez Maćka Korsana. <br> Będę tutaj zamieszczał kolejne wpisy, w których będę informował o
+				tym
 				jakie robię postępy w kursie. Mam nadzieję, że sam wygląd strony będzie się zmieniał. Przejdź do
 				notatek.
+			</p>
+			<p>
+				Poczytaj więcej o mojej <a href="#nauka">nauce</a>
 			</p>
 		</section>
 		<section>
@@ -38,7 +50,7 @@
 				</p>
 			</article>
 
-			<article>
+			<article id="nauka">
 				<h3>
 					Pierwsze kroki
 				</h3>
@@ -47,7 +59,8 @@
 					już
 					w czasach liceum „tworzyłem” stronkę dla rodziców. Była dość toporna i za bardzo nie wiedziałem o co
 					chodzi. Wszystko tworzyłem metodą prób i błędów, a gotowy layout strony wziąłem z gazety CD Action,
-					dołączali wtedy gotowe na płycie. Zdjęcia i tekst już sam wklejałem. Pierwszy tydzień jest raczej
+					dołączali wtedy gotowe na płycie. Zdjęcia i tekst już sam wklejałem. <br>Pierwszy tydzień jest
+					raczej
 					dość
 					spokojny. Można w nim spokojnie zapoznać się z narzędziami jakie będą potrzebne, oraz strukturą
 					dokumentu HTML. Jest też trochę zabawy przykładową stroną. Przez zmianę różnych elementów w jej
@@ -75,10 +88,12 @@
 				</p>
 			</article>
 		</section>
-		<footer>
-			<p>Strona domowa Pawła Haraf, wszystkie treści są efektem tworzenia szkolenia WTF: Co ten frontend.</p>
-		</footer>
 	</main>
+	<footer>
+		<p>Strona domowa Pawła Haraf, wszystkie treści są efektem tworzenia szkolenia WTF: Co ten frontend. <a
+				href="#top">do góry 🔝</a></p>
+
+	</footer>
 </body>
 
 </html>
