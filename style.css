@@ -9,6 +9,23 @@ h2 {
 	color: #1460aa;
 }
 
-section {
-	background: #cdc1f8;
+.czerwony {
+	color: red;
+}
+
+#nauka {
+	background-color: yellow;
+}
+
+a {
+	color: green;
+}
+
+section a {
+	color: orange;
+}
+
+.my-article p {
+	background-color: #1460aa;
+	color: #fff;
 }
