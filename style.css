@@ -9,8 +9,12 @@ h2 {
 	color: #1460aa;
 }
 
-.czerwony {
+.headerSection {
 	color: red;
+}
+
+.czerwony {
+	color: #a20041;
 }
 
 #nauka {
@@ -36,4 +40,12 @@ section a {
 
 .about {
 	color: #a20041;
+}
+
+.headerMain {
+	color: navy;
+}
+
+.headerArticle {
+	color: darkgreen;
 }
