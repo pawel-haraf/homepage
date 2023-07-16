@@ -22,10 +22,18 @@ a {
 }
 
 section a {
-	color: orange;
+	color: inherit;
+}
+
+.my-article {
+	color: hotpink;
 }
 
 .my-article p {
 	background-color: #1460aa;
 	color: #fff;
+}
+
+.about {
+	color: #a20041;
 }
