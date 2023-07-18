@@ -2,7 +2,9 @@ html {
 	block-size: border-box;
 }
 
-*,*:before, *:after {
+*,
+*:before,
+*:after {
 	block-size: inherit;
 }
 
@@ -14,10 +16,6 @@ h1 {
 	padding: 16px;
 }
 
-h2 {
-	color: #1460aa;
-	padding: 16px;
-}
 
 .headerSection {
 	color: red;
@@ -30,10 +28,6 @@ h2 {
 #nauka {
 	background-color: yellow;
 	padding: 16px;
-}
-
-a {
-	color: green;
 }
 
 section {
@@ -62,14 +56,31 @@ footer {
 	color: #a20041;
 }
 
-header {
-	padding: 16px;
-}
-
 .headerMain {
 	color: navy;
 }
 
 .headerArticle {
 	color: darkgreen;
+}
+.navigation {
+	padding: 16px;
+	background-color: blue;
+}
+
+.navigation__link {
+	color: white;
+}
+
+.section {
+	background-color: #dcdcdc;
+	margin-bottom: 16px;
+}
+
+.section__header {
+	color: #044550;
+}
+
+.section__header--special {
+	color: tomato;
 }
