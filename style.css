@@ -18,12 +18,13 @@ body {
 
 .article--special {
 	background-color: yellow;
-	padding: 16px;	
+	padding: 16px;
 }
 
 .article__content {
 	background-color: #1460aa;
 	color: #fff;
+	max-width: 80vw;
 	padding: 16px;
 	margin: 16px auto;
 }
@@ -52,20 +53,30 @@ body {
 
 .section {
 	background-color: #dcdcdc;
+	width: 90vw;
 	padding: 16px;
-	margin-bottom: 16px;
+	margin: 16px auto;
 }
 
 .section__header {
 	color: #044550;
+	padding: 16px;
+}
+
+.section__content {
+	max-width: 80vw;
+	margin: 16px auto;
+	color: #a20041;
+}
+
+.section__image {
+	display: block;
+	max-width: 80vw;
+	margin: 8px auto;
 }
 
 .section__link {
 	color: inherit;
-}
-
-.section__content {
-	color: #a20041;
 }
 
 .section__header--special {
