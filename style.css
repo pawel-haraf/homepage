@@ -11,58 +11,31 @@ html {
 body {
 	background-color: #fefefe;
 }
-h1 {
-	color: darkgreen;
-	padding: 16px;
-}
 
-
-.headerSection {
-	color: red;
-}
-
-.czerwony {
-	color: #a20041;
-}
-
-#nauka {
-	background-color: yellow;
-	padding: 16px;
-}
-
-section {
-	padding: 16px;
-}
-
-section a {
-	color: inherit;
-}
-
-footer {
-	padding: 16px;
-}
-
-.my-article {
+.article {
 	color: hotpink;
 }
 
-.my-article p {
+.article--special {
+	background-color: yellow;
+	padding: 16px;	
+}
+
+.article__content {
 	background-color: #1460aa;
 	color: #fff;
 	padding: 16px;
+	margin: 16px auto;
 }
 
-.about {
-	color: #a20041;
-}
-
-.page-header__heading {
-	color: navy;
-}
-
-.headerArticle {
+.article__header {
 	color: darkgreen;
 }
+
+.footer {
+	padding: 16px;
+}
+
 .navigation {
 	padding: 16px;
 	background-color: blue;
@@ -72,8 +45,14 @@ footer {
 	color: white;
 }
 
+.page-header__heading {
+	color: navy;
+	padding: 16px;
+}
+
 .section {
 	background-color: #dcdcdc;
+	padding: 16px;
 	margin-bottom: 16px;
 }
 
@@ -81,6 +60,14 @@ footer {
 	color: #044550;
 }
 
+.section__link {
+	color: inherit;
+}
+
+.section__content {
+	color: #a20041;
+}
+
 .section__header--special {
-	color: tomato;
+	color: #a20041;
 }
