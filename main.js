@@ -7,7 +7,7 @@ console.log(`Cześć :) Nazywam się ${firstName} i mam ${age} lat`)
 const header = document.querySelector('.page-header__heading--js')
 console.log(header)
 console.log(header.innerHTML)
-header.innerHTML = `Cześć :) Nazywam się ${firstName} i mam ${age} lat. To jest tekst nagłówka zmienionego poprzez JS:`
+header.innerHTML = `Cześć :) Nazywam się <span class="special">${firstName}</span> i mam ${age} lat. To jest tekst nagłówka zmienionego poprzez JS:`
 console.log(header.style)
 header.style.color = 'red'
 

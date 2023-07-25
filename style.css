@@ -10,6 +10,7 @@ html {
 
 body {
 	background-color: #fefefe;
+	font-family: Arial, Helvetica, sans-serif;
 }
 
 main {
@@ -79,6 +80,9 @@ main {
 .page-header__heading {
 	color: navy;
 	padding: 16px;
+	font-size: 3rem;
+	font-weight: 700;
+	letter-spacing: -.05em;
 }
 
 .section {
@@ -111,4 +115,14 @@ main {
 
 .section__header--special {
 	color: #a20041;
+}
+
+.section p {
+	line-height: 1.5;
+	font-size: 18px;
+}
+
+.special {
+	color: hotpink;
+	font-weight: 300;
 }
