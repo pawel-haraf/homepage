@@ -27,6 +27,10 @@ main {
 	padding: 16px;
 }
 
+.article__box {
+	color: #fff;
+}
+
 .article__content {
 	background-color: #1460aa;
 	color: #fff;
@@ -37,6 +41,10 @@ main {
 
 .article__header {
 	color: darkgreen;
+}
+
+.article__list {
+	list-style-type: circle;
 }
 
 .footer {
@@ -125,4 +133,13 @@ main {
 .special {
 	color: hotpink;
 	font-weight: 300;
+}
+
+table {
+	width: 100%;
+	text-align: center;
+}
+
+table caption {
+	margin-bottom: 2rem;
 }
