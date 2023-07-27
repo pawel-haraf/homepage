@@ -52,3 +52,29 @@ calculate2(1)
 
 const calculate3 = myNumber => (myNumber+4)*7
 console.log(calculate3(2))
+
+// 05.07 javaScript: obiekt
+const deathStar = {
+    diameter: 120000,
+    fire: (target) => {
+        console.log(`${target} destroyed 💣`)
+    },
+    isOperating: true,
+    levels: 357,
+    name:'Death Star',
+    population: 10000,
+    comander: {
+        name: 'darth vader'
+    }
+}
+
+console.log(deathStar)
+
+console.log(deathStar.name)
+
+deathStar.fire('alderan')
+deathStar.fire('scarif')
+
+console.log(deathStar['levels'])
+
+console.log(deathStar.comander.name)
