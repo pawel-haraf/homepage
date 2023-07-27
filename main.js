@@ -34,38 +34,37 @@ calculate1(1)
 const result = calculate1(2)
 console.log(result)
 
-
 function hello() {
-    console.log('hello')
+	console.log('hello')
 }
 
-hello();
+hello()
 
 // (fat) arrow funtion
-const calculate2 = (myNumber) => { 
-    myNumber = myNumber +3
-    console.log(myNumber)
-    return myNumber*7
+const calculate2 = myNumber => {
+	myNumber = myNumber + 3
+	console.log(myNumber)
+	return myNumber * 7
 }
 
 calculate2(1)
 
-const calculate3 = myNumber => (myNumber+4)*7
+const calculate3 = myNumber => (myNumber + 4) * 7
 console.log(calculate3(2))
 
 // 05.07 javaScript: obiekt
 const deathStar = {
-    diameter: 120000,
-    fire: (target) => {
-        console.log(`${target} destroyed 💣`)
-    },
-    isOperating: true,
-    levels: 357,
-    name:'Death Star',
-    population: 10000,
-    comander: {
-        name: 'darth vader'
-    }
+	diameter: 120000,
+	fire: target => {
+		console.log(`${target} destroyed 💣`)
+	},
+	isOperating: true,
+	levels: 357,
+	name: 'Death Star',
+	population: 10000,
+	comander: {
+		name: 'darth vader',
+	},
 }
 
 console.log(deathStar)
@@ -78,3 +77,39 @@ deathStar.fire('scarif')
 console.log(deathStar['levels'])
 
 console.log(deathStar.comander.name)
+
+// 05.08 JS: Immutability w obiektach
+
+const humanOne = {
+	name: 'Maciek',
+	age: 32,
+    address: {
+        street: "Warszawska",
+        city: "Białystok"
+    }
+}
+
+const humanTwo = {
+	name: 'Paweł',
+	age: 32,
+    address: humanOne.address
+}
+
+console.log(humanOne)
+console.log(humanTwo)
+
+humanTwo.age = 35
+humanOne.address.street = "Lipowa"
+
+console.log(humanOne)
+console.log(humanTwo)
+
+const humanThree = humanOne
+
+console.log(humanOne)
+console.log(humanThree)
+
+humanThree.age = 35
+
+console.log(humanOne)
+console.log(humanThree)
