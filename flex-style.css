@@ -1,0 +1,14 @@
+.flex {
+    border: 1px solid #efc944;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.flex__item {
+    background-color: #1c152a;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 1rem;
+    padding: 1rem;
+    width: 300px;
+}
