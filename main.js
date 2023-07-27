@@ -15,3 +15,40 @@ header.style.color = 'red'
 const content = document.querySelector('.article__content--js')
 console.log(content)
 content.innerHTML = `Zawartość paragrafu była pusta. Została uzupełniona poprzez javaScript. Jest to możliwe dzięki temu, że JS ma dostęp do różnych elementów w HTMLu czy CSSie poprzez DOM. Dzięki temu strony mogą być bardziej interaktywne.`
+
+// 05.06 javaScript: funkcje
+function calculate(myNumber) {
+	return myNumber * 7
+}
+
+console.log(calculate(2))
+
+function calculate1(myNumber) {
+	myNumber = myNumber + 3
+	console.log(myNumber)
+	return myNumber * 7
+}
+
+calculate1(1)
+
+const result = calculate1(2)
+console.log(result)
+
+
+function hello() {
+    console.log('hello')
+}
+
+hello();
+
+// (fat) arrow funtion
+const calculate2 = (myNumber) => { 
+    myNumber = myNumber +3
+    console.log(myNumber)
+    return myNumber*7
+}
+
+calculate2(1)
+
+const calculate3 = myNumber => (myNumber+4)*7
+console.log(calculate3(2))
