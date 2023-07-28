@@ -34,11 +34,11 @@ calculate1(1)
 const result = calculate1(2)
 console.log(result)
 
-function hello() {
+function sayHello() {
 	console.log('hello')
 }
 
-hello()
+sayHello()
 
 // (fat) arrow funtion
 const calculate2 = myNumber => {
@@ -113,3 +113,11 @@ humanThree.age = 35
 
 console.log(humanOne)
 console.log(humanThree)
+
+// zadanie domowe z tygodnia V
+
+function hello(age, firstName)  {
+console.log(`Witam Was wszystkich na mojej stronie. Nazywam się ${firstName} i mam ${age} lat.`)
+}
+
+hello(age, firstName)
