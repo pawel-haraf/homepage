@@ -73,6 +73,8 @@ main {
 }
 
 .navigation {
+	display: flex;
+	justify-content: space-around;
 	padding: 16px;
 	background-color: blue;
 }
