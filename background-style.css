@@ -1,0 +1,23 @@
+html {
+	block-size: border-box;
+}
+
+*,
+*:before,
+*:after {
+	block-size: inherit;
+}
+
+body {
+    background: #09070c;
+    color: lime;
+    min-height: 100vh;
+}
+
+.main {
+    background-image: url(/red-1618916_1280.png);
+    background-position:center,center;
+    background-repeat: space;
+    background-attachment: fixed;
+    background-size: contain;
+}
