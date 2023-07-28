@@ -1,14 +1,42 @@
+html {
+	block-size: border-box;
+}
+
+*,
+*:before,
+*:after {
+	block-size: inherit;
+}
+
 .flex {
-    border: 1px solid #efc944;
-    display: flex;
-    flex-flow: row wrap;
+	border: 1px solid #efc944;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+    align-items: baseline;
+    padding: 1rem;
+    gap: 2rem;
 }
 
 .flex__item {
-    background-color: #1c152a;
-    color: #fff;
-    border: 1px solid #fff;
-    border-radius: 1rem;
-    padding: 1rem;
-    width: 300px;
+	background-color: #1c152a;
+	color: #fff;
+	border: 1px solid #fff;
+	border-radius: 1rem;
+	padding: 1rem;
+    flex: 1 2 40px;
+}
+
+.flex__item--bigger {
+    font-size: 2rem;
+    flex-grow: 2;
+    flex-shrink: 1;
+}
+
+.flex__item--order {
+    order: 2;
+}
+
+.flex__item--self {
+    align-self: stretch;
 }
