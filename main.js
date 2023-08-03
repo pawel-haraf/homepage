@@ -83,23 +83,23 @@ console.log(deathStar.comander.name)
 const humanOne = {
 	name: 'Maciek',
 	age: 32,
-    address: {
-        street: "Warszawska",
-        city: "Białystok"
-    }
+	address: {
+		street: 'Warszawska',
+		city: 'Białystok',
+	},
 }
 
 const humanTwo = {
 	name: 'Paweł',
 	age: 32,
-    address: humanOne.address
+	address: humanOne.address,
 }
 
 console.log(humanOne)
 console.log(humanTwo)
 
 humanTwo.age = 35
-humanOne.address.street = "Lipowa"
+humanOne.address.street = 'Lipowa'
 
 console.log(humanOne)
 console.log(humanTwo)
@@ -116,8 +116,33 @@ console.log(humanThree)
 
 // zadanie domowe z tygodnia V
 
-function hello(age, firstName)  {
-console.log(`Witam Was wszystkich na mojej stronie. Nazywam się ${firstName} i mam ${age} lat.`)
+function hello(age, firstName) {
+	console.log(`Witam Was wszystkich na mojej stronie. Nazywam się ${firstName} i mam ${age} lat.`)
 }
 
 hello(age, firstName)
+
+// 06.02 Logika w JS
+
+let myNumber1
+
+if (myNumber1 === 4) {
+	console.log('my number to 4')
+} else if (myNumber1 === 8) {
+	console.log('my number to 8')
+} else {
+	console.log('nie wiem ile wynosi my number')
+}
+
+switch (myNumber1) {
+	case 4:
+		console.log('my number to 4')
+		break
+	case 8:
+		console.log('my number to 8')
+		break
+	default:
+		console.log('nie wiem ile wynosisz')
+}
+
+myNumber1 > 4 ? console.log('większe niż 4') : console.log('mniejsze lub równe od 4')
