@@ -7,6 +7,7 @@
 	<title>WTF: Co ten frontend</title>
 	<link rel="stylesheet" href="/style.css" type="text/css">
 	<link rel="stylesheet" href="/normalize.css" type="text/css">
+	<link rel="stylesheet" href="/form-style.css">
 </head>
 
 <body>
@@ -16,12 +17,119 @@
 			<a href="/nauka-html.html" class="navigation__link">Nauka HTML'a</a>
 			<a href="/playground-flexbox.html" class="navigation__link">Playground-flexbox</a>
 			<a href="/playground-background.html" class="navigation__link">Playground-background</a>
-			<a href="https://pawel-haraf.github.io/business-card-2023/" class="navigation__link" target="_blank">Wizytówka</a>
-            <a href="/form.html" class="navigation__link">Formularz WTF</a>
+			<a href="https://pawel-haraf.github.io/business-card-2023/" class="navigation__link"
+				target="_blank">Wizytówka</a>
+			<a href="/form.html" class="navigation__link">Formularz WTF</a>
 		</nav>
 	</header>
 	<main>
+		<header class="page-header" id="top">
+			<h1 class="page-header__heading">Formularze</h1>
+		</header>
+		<section class="form">
+			<form action="https://forms.cotenfrontend.pl" method="post">
+				<p>
+					<label for="firstName">Imię:</label>
+					<input id="firstName" name="firstName" value="Paweł" placeholder="Imię">
+				</p>
+				<p>
+					<label for="lastName">Nazwisko:</label>
+					<input id="lastName" name="lastName" placeholder="Nazwisko" required
+				</p>
+				<p>
+					<label for="secret">Tajna wiadomość:</label>
+					<input id="secret" name="secret" placeholder="secret" type="password">
+				</p>
+				<p>
+					<label for="size">Wybierz opcję:</label>
+					<select name="size" id="size">
+						<option value="s">S</option>
+						<option value="m">M</option>
+						<option selected value="l">L</option>
+						<option value="xl">XL</option>
+					</select>
+				</p>
+				<p>
+					<label for="avatar">Awatar:</label>
+					<input id="avatar" name="avatar" type="file">
+				</p>
+				<p>
+					<label for="age">Wiek:</label>
+					<input id="age" name="age" placeholder="Twój wiek" type="number">
+				</p>
+				<p>
+					<label for="favNumber">Ulubiona liczba:</label>
+					<input id="favNumber" name="favNumber" type="range" min="0" max="100" step="5" value="20">
+				</p>
+				<fieldset>
+					<legend>Dane adresowe:</legend>
+					<p>
+						<label for="street">Ulica:</label>
+						<input id="street" name="street" placeholder="Twoja ulica" type="text">
+					</p>
+					<p>
+						<label for="city">Miasto:</label>
+						<input id="city" name="city" placeholder="Twoje miasto" type="text">
+					</p>
+					<p>
+						<label for="postalCode">Kod pocztowy:</label>
+						<input id="postalCode" name="postalCode" placeholder="Twój kod pocztowy" type="text" pattern="[0-9]{2}-[0-9]{3}">
+					</p>
+					<p>
+						<label for="phone">Numer telefonu:</label>
+						<input id="phone" name="phone" placeholder="Twój numer telefonu" type="tel">
+					</p>
+					<p>
+						<label for="email">E-mail:</label>
+						<input id="email" name="email" placeholder="Twój adres e-mail" type="email">
+					</p>
 
+				</fieldset>
+				<fieldset>
+					<legend>Twoje ulubione lody to:</legend>
+					<p>
+						<label>
+							<input type="radio" name="icecream" value="chocolate">czekoladowe
+						</label>
+					</p>
+					<p>
+						<label>
+							<input type="radio" name="icecream" value="creamy">śmietankowe
+						</label>
+					</p>
+					<p>
+						<label>
+							<input type="radio" name="icecream" value="pistachio" checked>pistacjowe
+						</label>
+					</p>
+				</fieldset>
+				<fieldset>
+					<legend>Twoje ulubione zespoły to:</legend>
+					<p>
+						<label>
+							<input type="checkbox" name="band" value="radiohead">Radiohead
+						</label>
+					</p>
+					<p>
+						<label>
+							<input type="checkbox" name="band" value="system">System of a down
+						</label>
+					</p>
+					<p>
+						<label>
+							<input type="checkbox" name="band" value="Tworzywo" checked>Tworzywo stuczne
+						</label>
+					</p>
+				</fieldset>
+				<p>
+					<label for="comment">Komentarz</label><br>
+					<textarea name="comment" id="comment" placeholder="Twój komentarz..."></textarea>
+				</p>
+				<p>
+					<input type="submit" value="wyślij">
+				</p>
+			</form>
+		</section>
 	</main>
 	<footer class="footer">
 		<p class="footer__content">Strona domowa Pawła Haraf, wszystkie treści są efektem tworzenia szkolenia WTF: Co
