@@ -1,0 +1,11 @@
+.grid {
+}
+
+.grid__item {
+	background-color: #1c152a;
+	color: #fff;
+	border: 1px solid #fff;
+	border-radius: 1rem;
+	padding: 1rem;
+	flex: 0 1 50px;
+}
