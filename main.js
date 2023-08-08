@@ -151,8 +151,18 @@ myNumber1 > 4 ? console.log('większe niż 4') : console.log('mniejsze lub równ
 
 const button = document.querySelector('.page-header__button--js')
 
-button.addEventListener('click', (e) => {
+button.addEventListener('click', e => {
 	console.log('click, click')
 	const header = document.querySelector('.page-header__heading--js')
 	header.innerHTML = 'Zmieniony tekst nagłówka przez javaScript!!!'
-} )
+})
+
+// 06.13 🍔 menu
+
+const hamburger = document.querySelector('.hamburger--js')
+
+hamburger.addEventListener('click', () => {
+	console.log('🍔')
+	const navigation = document.querySelector('.navigation--js')
+	navigation.classList.toggle('navigation--open')
+})

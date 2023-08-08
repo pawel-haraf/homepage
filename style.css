@@ -11,7 +11,6 @@ html {
 body {
 	background-color: #0093e9;
 	background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
-
 	font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -76,20 +75,36 @@ main {
 	border-radius: 8px;
 }
 
+.hamburger {
+	padding: 4px;
+	background: none;
+	border: 0;
+	font-size: 1.5rem;
+}
+
 .header {
-	position: sticky;
-	top: 0;
+	min-height: 50px;
+	background-color: #150a1e;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
 }
 
 .navigation {
-	display: flex;
-	flex-flow: row wrap;
+	display: none;
+	flex-direction: column;
 	justify-content: space-around;
 	align-items: center;
-	align-content: center;
 	gap: 24px;
+	background-color: #150a1e;
 	padding: 16px;
-	background-color: blue;
+	position: absolute;
+	top: 50px;
+	width: 100%;
+}
+
+.navigation--open {
+	display: flex;
 }
 
 .navigation__link {
@@ -178,8 +193,28 @@ table caption {
 		gap: 24px;
 	}
 
+	.header {
+		position: sticky;
+		top: 0;
+	}
+
+	.hamburger {
+		display: none;
+	}
+
 	.page-header__heading {
 		font-size: 2rem;
+	}
+
+	.navigation {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-around;
+		align-items: center;
+		position: static;
+		gap: 24px;
+		background-color: #150a1e;
+		padding: 16px;
 	}
 }
 
