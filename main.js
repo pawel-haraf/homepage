@@ -146,3 +146,13 @@ switch (myNumber1) {
 }
 
 myNumber1 > 4 ? console.log('większe niż 4') : console.log('mniejsze lub równe od 4')
+
+// 06.12 eventy - click
+
+const button = document.querySelector('.page-header__button--js')
+
+button.addEventListener('click', (e) => {
+	console.log('click, click')
+	const header = document.querySelector('.page-header__heading--js')
+	header.innerHTML = 'Zmieniony tekst nagłówka przez javaScript!!!'
+} )

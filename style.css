@@ -100,6 +100,15 @@ main {
 	padding: 16px;
 }
 
+.page-header__button {
+	background-color: blue;
+	color: white;
+	font-weight: 700;
+	border: 0;
+	padding: 4px 8px;
+	border-radius: 4px;
+}
+
 .page-header__heading {
 	color: navy;
 	padding: 16px;
