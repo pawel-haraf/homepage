@@ -1,6 +1,23 @@
 .grid {
     display: grid;
-    grid-template-areas: "header header"
-    "article aside"
-    "footer footer";
+    grid-template-columns: 1fr 200px;
+    gap: 24px;
 }
+
+.header {
+    grid-column: 1 / 3;
+}
+
+.article {
+
+}
+
+.aside {
+
+}
+
+.footer {
+    grid-column: 1 / 3;
+
+}
+
