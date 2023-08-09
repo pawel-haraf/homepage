@@ -4,7 +4,7 @@
     gap: 24px;
 }
 
-.header {
+.header-grid {
     grid-column: 1 / 3;
 }
 
