@@ -21,11 +21,14 @@ main {
 
 .article {
 	color: hotpink;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
 }
-
 .article--special {
 	background-color: yellow;
-	padding: 16px;
 }
 
 .article__box {
@@ -37,7 +40,7 @@ main {
 	color: #fff;
 	max-width: 80%;
 	padding: 16px;
-	margin-bottom: 0;
+	text-align: left;
 }
 
 .article__header {
@@ -139,15 +142,21 @@ main {
 	margin: 16px auto;
 }
 
-.section__header {
-	color: #044550;
-	padding: 16px;
-}
-
 .section__content {
 	max-width: 80vw;
 	margin: 16px auto;
 	color: #a20041;
+}
+
+.section-grid {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 12px;
+}
+
+.section__header {
+	color: #044550;
+	padding: 16px;
 }
 
 .section__image {
