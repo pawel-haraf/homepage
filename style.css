@@ -202,10 +202,6 @@ table caption {
 		display: none;
 	}
 
-	.page-header__heading {
-		font-size: 2rem;
-	}
-
 	.navigation {
 		display: flex;
 		flex-flow: row wrap;
@@ -216,14 +212,30 @@ table caption {
 		background-color: #150a1e;
 		padding: 16px;
 	}
+
+	.page-header__heading {
+		font-size: 2rem;
+	}
+
+	.section-grid {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 24px;
+	}
 }
 
 @media screen and (min-width: 1280px) {
+	.article-grid {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+
 	.page-header__heading {
 		font-size: 3rem;
 	}
 
-	.article-grid {
-		grid-template-columns: 1fr 1fr 1fr;
+	.section-grid {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 24px;
 	}
 }
