@@ -1,27 +1,28 @@
 {
-  "name": "homepage",
-  "version": "1.0.0",
-  "description": "",
-  "main": "main.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "cow": "cowsay siemka"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/pawel-haraf/homepage.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/pawel-haraf/homepage/issues"
-  },
-  "homepage": "https://github.com/pawel-haraf/homepage#readme",
-  "dependencies": {
-    "normalize.css": "^8.0.1"
-  },
-  "devDependencies": {
-    "cowsay": "^1.5.0",
-    "parcel": "^2.9.3"
-  }
+	"name": "homepage",
+	"version": "1.0.0",
+	"description": "",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"cow": "cowsay siemka",
+		"start": "parcel src/index.html",
+		"build": "parcel build src/index.html"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/pawel-haraf/homepage.git"
+	},
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/pawel-haraf/homepage/issues"
+	},
+	"homepage": "https://github.com/pawel-haraf/homepage#readme",
+	"dependencies": {
+		"normalize.css": "^8.0.1"
+	},
+	"devDependencies": {
+		"cowsay": "^1.5.0",
+		"parcel": "^2.9.3"
+	}
 }
