@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Playground grid</title>
-    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="styles/main.scss" type="text/css">
     <link rel="stylesheet" href="normalize.css" type="text/css">
     <link rel="stylesheet" href="form-style.css">
     <link rel="stylesheet" href="layout-style.css">
@@ -33,76 +33,111 @@
         </header>
         <article class="article">
             <p>
-                CSS Grid to zaawansowany system układania elementów na stronie internetowej przy użyciu arkuszy stylów (CSS). Pozwala on na tworzenie dwuwymiarowych układów, w których można kontrolować zarówno położenie, jak i rozmiar poszczególnych elementów w obrębie kontenera. Jest to potężne narzędzie, które umożliwia tworzenie responsywnych i elastycznych układów strony.
+                CSS Grid to zaawansowany system układania elementów na stronie internetowej przy użyciu arkuszy stylów
+                (CSS). Pozwala on na tworzenie dwuwymiarowych układów, w których można kontrolować zarówno położenie,
+                jak i rozmiar poszczególnych elementów w obrębie kontenera. Jest to potężne narzędzie, które umożliwia
+                tworzenie responsywnych i elastycznych układów strony.
             </p>
             <p>Oto kilka kluczowych pojęć i funkcji związanych z CSS Grid:</p>
             <ol>
                 <li>
-                    Kontener Grid (Grid Container): Jest to element, który staje się siatką, w której umieszczane są elementy. Aby zdefiniować kontener Grid, używa się właściwości display z wartością grid lub inline-grid.
+                    Kontener Grid (Grid Container): Jest to element, który staje się siatką, w której umieszczane są
+                    elementy. Aby zdefiniować kontener Grid, używa się właściwości display z wartością grid lub
+                    inline-grid.
                 </li>
                 <li>
-                    Elementy Grid (Grid Items): Są to elementy umieszczone wewnątrz kontenera Grid. Mogą to być na przykład divy, obrazy, tekst czy inne elementy HTML.
+                    Elementy Grid (Grid Items): Są to elementy umieszczone wewnątrz kontenera Grid. Mogą to być na
+                    przykład divy, obrazy, tekst czy inne elementy HTML.
                 </li>
                 <li>
-                    Rzędy i Kolumny (Rows and Columns): Grid można podzielić na wiersze i kolumny, co tworzy siatkę. Możesz definiować ich szerokość, wysokość oraz sposób podziału, na przykład w pikselach, procentach czy frakcjach.
+                    Rzędy i Kolumny (Rows and Columns): Grid można podzielić na wiersze i kolumny, co tworzy siatkę.
+                    Możesz definiować ich szerokość, wysokość oraz sposób podziału, na przykład w pikselach, procentach
+                    czy frakcjach.
                 </li>
                 <li>
-                    Linie Siatki (Grid Lines): Linie siatki są podziałką definiującą wiersze i kolumny w kontenerze Grid. Możesz nadawać im nazwy i odwoływać się do nich, co pozwala na bardziej precyzyjne układanie elementów.
+                    Linie Siatki (Grid Lines): Linie siatki są podziałką definiującą wiersze i kolumny w kontenerze
+                    Grid. Możesz nadawać im nazwy i odwoływać się do nich, co pozwala na bardziej precyzyjne układanie
+                    elementów.
                 </li>
                 <li>
-                    Przestrzeń (Gap): Gap to odstęp między elementami wewnątrz kontenera Grid. Możesz kontrolować odstępy między wierszami i kolumnami za pomocą właściwości grid-row-gap i grid-column-gap, lub skróconego zapisu grid-gap.
+                    Przestrzeń (Gap): Gap to odstęp między elementami wewnątrz kontenera Grid. Możesz kontrolować
+                    odstępy między wierszami i kolumnami za pomocą właściwości grid-row-gap i grid-column-gap, lub
+                    skróconego zapisu grid-gap.
                 </li>
                 <li>
-                    Automatyczny Rozmiar (Automatic Sizing): Możesz definiować, czy wiersze i kolumny mają mieć automatycznie dostosowujący się rozmiar do zawartości, czy też mają mieć stały rozmiar. Używa się do tego właściwości grid-auto-rows i grid-auto-columns.
+                    Automatyczny Rozmiar (Automatic Sizing): Możesz definiować, czy wiersze i kolumny mają mieć
+                    automatycznie dostosowujący się rozmiar do zawartości, czy też mają mieć stały rozmiar. Używa się do
+                    tego właściwości grid-auto-rows i grid-auto-columns.
                 </li>
                 <li>
-                    Obszary Gridowe (Grid Areas): To zaawansowana technika, która pozwala na definiowanie obszarów, które mogą obejmować wiele wierszy i kolumn. Dzięki temu można w łatwy sposób tworzyć bardziej skomplikowane układy strony.
+                    Obszary Gridowe (Grid Areas): To zaawansowana technika, która pozwala na definiowanie obszarów,
+                    które mogą obejmować wiele wierszy i kolumn. Dzięki temu można w łatwy sposób tworzyć bardziej
+                    skomplikowane układy strony.
                 </li>
                 <li>
-                    Responsywność (Responsiveness): CSS Grid jest doskonałym narzędziem do tworzenia responsywnych układów. Możesz używać funkcji takich jak media queries, aby dostosować układ w zależności od szerokości ekranu.
+                    Responsywność (Responsiveness): CSS Grid jest doskonałym narzędziem do tworzenia responsywnych
+                    układów. Możesz używać funkcji takich jak media queries, aby dostosować układ w zależności od
+                    szerokości ekranu.
                 </li>
                 <li>
-                    Podporządkowanie (Nesting): Możesz zagnieżdżać siatki Grid wewnątrz innych siatek Grid, co pozwala na jeszcze większą kontrolę nad układem.
+                    Podporządkowanie (Nesting): Możesz zagnieżdżać siatki Grid wewnątrz innych siatek Grid, co pozwala
+                    na jeszcze większą kontrolę nad układem.
                 </li>
             </ol>
-            
+
             <p>
-                CSS Grid oferuje wiele zalet i korzyści, które sprawiają, że jest to potężne narzędzie do tworzenia układów stron internetowych. Oto niektóre z głównych zalet CSS Grid:
+                CSS Grid oferuje wiele zalet i korzyści, które sprawiają, że jest to potężne narzędzie do tworzenia
+                układów stron internetowych. Oto niektóre z głównych zalet CSS Grid:
             </p>
             <ul>
                 <li>
-                    Dwuwymiarowe Układy: CSS Grid umożliwia tworzenie zaawansowanych, dwuwymiarowych układów, które pozwalają na równoczesne kontrolowanie zarówno wierszy, jak i kolumn. To pozwala na bardziej swobodne i elastyczne układanie elementów.
+                    Dwuwymiarowe Układy: CSS Grid umożliwia tworzenie zaawansowanych, dwuwymiarowych układów, które
+                    pozwalają na równoczesne kontrolowanie zarówno wierszy, jak i kolumn. To pozwala na bardziej
+                    swobodne i elastyczne układanie elementów.
                 </li>
                 <li>
-                    Responsywność: Dzięki funkcjom responsywnym i możliwości definiowania układów dla różnych szerokości ekranu za pomocą media queries, CSS Grid ułatwia tworzenie responsywnych projektów, które dostosowują się do różnych urządzeń.
+                    Responsywność: Dzięki funkcjom responsywnym i możliwości definiowania układów dla różnych szerokości
+                    ekranu za pomocą media queries, CSS Grid ułatwia tworzenie responsywnych projektów, które
+                    dostosowują się do różnych urządzeń.
                 </li>
                 <li>
-                    Precyzja i Kontrola: CSS Grid oferuje wysoką precyzję i kontrolę nad układem elementów, dzięki możliwości definiowania rozmiarów w pikselach, procentach, frakcjach oraz automatycznego dostosowywania rozmiaru do zawartości.
+                    Precyzja i Kontrola: CSS Grid oferuje wysoką precyzję i kontrolę nad układem elementów, dzięki
+                    możliwości definiowania rozmiarów w pikselach, procentach, frakcjach oraz automatycznego
+                    dostosowywania rozmiaru do zawartości.
                 </li>
                 <li>
-                    Podporządkowanie i Zagnieżdżanie: Możesz zagnieżdżać siatki Grid wewnątrz siebie, tworząc bardziej skomplikowane układy. To umożliwia lepszą organizację i zarządzanie układem strony.
+                    Podporządkowanie i Zagnieżdżanie: Możesz zagnieżdżać siatki Grid wewnątrz siebie, tworząc bardziej
+                    skomplikowane układy. To umożliwia lepszą organizację i zarządzanie układem strony.
                 </li>
                 <li>
-                    Obszary Gridowe: Możesz definiować obszary Grid, które mogą obejmować wiele wierszy i kolumn. To ułatwia tworzenie wyrafinowanych układów z różnymi sekcjami.
+                    Obszary Gridowe: Możesz definiować obszary Grid, które mogą obejmować wiele wierszy i kolumn. To
+                    ułatwia tworzenie wyrafinowanych układów z różnymi sekcjami.
                 </li>
                 <li>
-                    Skróty i Prostota: CSS Grid oferuje skrócone właściwości, takie jak grid-template czy grid-area, które upraszczają tworzenie bardziej złożonych układów w jednym miejscu.
+                    Skróty i Prostota: CSS Grid oferuje skrócone właściwości, takie jak grid-template czy grid-area,
+                    które upraszczają tworzenie bardziej złożonych układów w jednym miejscu.
                 </li>
                 <li>
-                    Równości wysokości kolumn: Możliwość automatycznego wyrównywania wysokości kolumn do zawartości wewnątrz nich, dzięki właściwości align-content.
+                    Równości wysokości kolumn: Możliwość automatycznego wyrównywania wysokości kolumn do zawartości
+                    wewnątrz nich, dzięki właściwości align-content.
                 </li>
                 <li>
-                    Wsparcie Przeglądarek: CSS Grid jest szeroko wspierany przez nowoczesne przeglądarki, co oznacza, że ​​można go używać w większości projektów bez większych problemów z kompatybilnością.
+                    Wsparcie Przeglądarek: CSS Grid jest szeroko wspierany przez nowoczesne przeglądarki, co oznacza, że
+                    ​​można go używać w większości projektów bez większych problemów z kompatybilnością.
                 </li>
                 <li>
-                    Efektywność wizualna: Dzięki kontroli nad układem i rozmieszczeniem elementów, CSS Grid pozwala na tworzenie bardziej atrakcyjnych i efektownych interfejsów.
+                    Efektywność wizualna: Dzięki kontroli nad układem i rozmieszczeniem elementów, CSS Grid pozwala na
+                    tworzenie bardziej atrakcyjnych i efektownych interfejsów.
                 </li>
                 <li>
-                    Elastyczność i Przenoszenie: CSS Grid daje dużą elastyczność w projektowaniu układów, co ułatwia przesuwanie i zmianę położenia elementów bez konieczności dużego przeorganizowywania kodu.
+                    Elastyczność i Przenoszenie: CSS Grid daje dużą elastyczność w projektowaniu układów, co ułatwia
+                    przesuwanie i zmianę położenia elementów bez konieczności dużego przeorganizowywania kodu.
                 </li>
             </ul>
             <p>
-                W skrócie, CSS Grid jest potężnym narzędziem, które ułatwia projektowanie układów stron internetowych, zapewniając zaawansowane funkcje, precyzję i elastyczność. Dzięki jego zaletom można tworzyć bardziej efektywne i atrakcyjne strony internetowe, dostosowane do różnych urządzeń i wymagań projektowych.
+                W skrócie, CSS Grid jest potężnym narzędziem, które ułatwia projektowanie układów stron internetowych,
+                zapewniając zaawansowane funkcje, precyzję i elastyczność. Dzięki jego zaletom można tworzyć bardziej
+                efektywne i atrakcyjne strony internetowe, dostosowane do różnych urządzeń i wymagań projektowych.
             </p>
         </article>
         <aside class="aside">
