@@ -1,4 +1,12 @@
 $text-color: blue;
+@mixin pseudoElement {
+	content: '';
+	background: red;
+	width: 15px;
+	height: 15px;
+	border-radius: 100%;
+	display: inline-block;
+}
 
 html {
 	block-size: border-box;
@@ -45,6 +53,12 @@ main {
 	}
 	&__header {
 		color: darkgreen;
+		&::before {
+			@include pseudoElement();
+		}
+		&::after {
+			@include pseudoElement()
+		}
 	}
 	&__list {
 		list-style-type: circle;
