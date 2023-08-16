@@ -1,0 +1,16 @@
+$text-color: blue;
+$tablet: 758px;
+$desktop: 1280px;
+
+.article-grid {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 12px;
+	@media screen and (min-width: $tablet) {
+		grid-template-columns: 1fr 1fr;
+		gap: 24px;
+	}
+	@media screen and (min-width: $desktop) {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+}

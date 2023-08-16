@@ -1,0 +1,23 @@
+$text-color: blue;
+$tablet: 758px;
+$desktop: 1280px;
+
+.footer {
+	padding: 16px;
+	max-width: 768px;
+	margin: 0 auto;
+	background-color: #1460aa;
+	&__content {
+		color: #949494;
+	}
+	&__top-link {
+		display: block;
+		position: fixed;
+		bottom: 16px;
+		right: 16px;
+		color: white;
+		padding: 8px 12px;
+		background-color: black;
+		border-radius: 8px;
+	}
+}

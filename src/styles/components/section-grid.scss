@@ -1,0 +1,19 @@
+$text-color: blue;
+$tablet: 758px;
+$desktop: 1280px;
+
+.section-grid {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 12px;
+	@media screen and (min-width: $tablet) {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 24px;
+	}
+	@media screen and (min-width: $desktop) {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 24px;
+	}
+}

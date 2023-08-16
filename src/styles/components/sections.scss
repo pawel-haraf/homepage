@@ -1,0 +1,29 @@
+.section {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #dcdcdc;
+	width: 90%;
+	gap: 16px;
+	padding: 16px;
+	&__content {
+		max-width: 80vw;
+		color: #a20041;
+		line-height: 1.5;
+		font-size: 18px;
+	}
+	&__header {
+		color: #044550;
+		&--special {
+			color: #a20041;
+		}
+	}
+	&__image {
+		display: block;
+		max-width: 80%;
+	}
+	&__link {
+		color: inherit;
+	}
+}

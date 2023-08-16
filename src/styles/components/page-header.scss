@@ -1,0 +1,27 @@
+$text-color: blue;
+$tablet: 758px;
+$desktop: 1280px;
+
+.page-header {
+	padding: 16px;
+	&__button {
+		background-color: blue;
+		color: white;
+		font-weight: 700;
+		border: 0;
+		padding: 4px 8px;
+		border-radius: 4px;
+	}
+	&__heading {
+		color: navy;
+		font-size: 1.5rem;
+		font-weight: 700;
+		letter-spacing: -0.05em;
+		@media screen and (min-width: $tablet) {
+			font-size: 2rem;
+		}
+		@media screen and (min-width: $desktop) {
+			font-size: 3rem;
+		}
+	}
+}

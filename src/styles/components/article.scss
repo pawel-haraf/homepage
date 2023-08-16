@@ -1,0 +1,44 @@
+$text-color: blue;
+
+@mixin pseudoElement {
+	content: '';
+	background: red;
+	width: 15px;
+	height: 15px;
+	border-radius: 100%;
+	display: inline-block;
+}
+
+.article {
+	color: $text-color;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	&--special {
+		background-color: yellow;
+	}
+	&__box {
+		color: #fff;
+	}
+	&__content {
+		background-color: #1460aa;
+		color: #fff;
+		max-width: 80%;
+		padding: 16px;
+		text-align: left;
+	}
+	&__header {
+		color: darkgreen;
+		&::before {
+			@include pseudoElement();
+		}
+		&::after {
+			@include pseudoElement();
+		}
+	}
+	&__list {
+		list-style-type: circle;
+	}
+}
