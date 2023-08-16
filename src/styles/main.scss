@@ -1,4 +1,7 @@
 $text-color: blue;
+$tablet: 758px;
+$desktop: 1280px;
+
 @mixin pseudoElement {
 	content: '';
 	background: red;
@@ -22,7 +25,7 @@ body {
 	background-color: #0093e9;
 	background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
 	font-family: Arial, Helvetica, sans-serif;
-	@media screen and (min-width: 768px) {
+	@media screen and (min-width: $tablet) {
 		body {
 			background: black;
 		}
@@ -41,6 +44,9 @@ main {
 	justify-content: center;
 	align-items: center;
 	text-align: center;
+	&--special {
+		background-color: yellow;
+	}
 	&__box {
 		color: #fff;
 	}
@@ -57,14 +63,11 @@ main {
 			@include pseudoElement();
 		}
 		&::after {
-			@include pseudoElement()
+			@include pseudoElement();
 		}
 	}
 	&__list {
 		list-style-type: circle;
-	}
-	&--special {
-		background-color: yellow;
 	}
 }
 
@@ -72,11 +75,11 @@ main {
 	display: grid;
 	grid-template-columns: 1fr;
 	gap: 12px;
-	@media screen and (min-width: 768px) {
+	@media screen and (min-width: $tablet) {
 		grid-template-columns: 1fr 1fr;
 		gap: 24px;
 	}
-	@media screen and (min-width: 1280px) {
+	@media screen and (min-width: $desktop) {
 		grid-template-columns: 1fr 1fr 1fr;
 	}
 }
@@ -106,7 +109,7 @@ main {
 	background: none;
 	border: 0;
 	font-size: 1.5rem;
-	@media screen and (min-width: 768px) {
+	@media screen and (min-width: $tablet) {
 		display: none;
 	}
 }
@@ -117,7 +120,7 @@ main {
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
-	@media screen and (min-width: 768px) {
+	@media screen and (min-width: $tablet) {
 		position: sticky;
 		top: 0;
 	}
@@ -134,21 +137,16 @@ main {
 	position: absolute;
 	top: 50px;
 	width: 100%;
-	&__link {
-		color: white;
-	}
 	&--open {
 		display: flex;
 	}
-	@media screen and (min-width: 768px) {
+	&__link {
+		color: white;
+	}
+	@media screen and (min-width: $tablet) {
 		display: flex;
 		flex-flow: row wrap;
-		justify-content: space-around;
-		align-items: center;
 		position: static;
-		gap: 24px;
-		background-color: #150a1e;
-		padding: 16px;
 	}
 }
 
@@ -164,14 +162,13 @@ main {
 	}
 	&__heading {
 		color: navy;
-		padding: 16px;
 		font-size: 1.5rem;
 		font-weight: 700;
 		letter-spacing: -0.05em;
-		@media screen and (min-width: 768px) {
+		@media screen and (min-width: $tablet) {
 			font-size: 2rem;
 		}
-		@media screen and (min-width: 1280px) {
+		@media screen and (min-width: $desktop) {
 			font-size: 3rem;
 		}
 	}
@@ -221,20 +218,22 @@ main {
 }
 
 .section {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	background-color: #dcdcdc;
 	width: 90%;
+	gap: 16px;
 	padding: 16px;
-	margin: 16px auto;
 	&__content {
 		max-width: 80vw;
-		margin: 16px auto;
 		color: #a20041;
 		line-height: 1.5;
 		font-size: 18px;
 	}
 	&__header {
 		color: #044550;
-		padding: 16px;
 		&--special {
 			color: #a20041;
 		}
@@ -242,7 +241,9 @@ main {
 	&__image {
 		display: block;
 		max-width: 80vw;
-		margin: 8px auto;
+		@media screen and (min-width: $tablet) {
+			max-width: 80%;
+		}
 	}
 	&__link {
 		color: inherit;
@@ -253,12 +254,12 @@ main {
 	display: grid;
 	grid-template-columns: 1fr;
 	gap: 12px;
-	@media screen and (min-width: 768px) {
+	@media screen and (min-width: $tablet) {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
 		gap: 24px;
 	}
-	@media screen and (min-width: 1280px) {
+	@media screen and (min-width: $desktop) {
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
 		gap: 24px;
@@ -273,8 +274,8 @@ main {
 table {
 	width: 100%;
 	text-align: center;
+	caption {
+		margin-bottom: 2rem;
+	}
 }
 
-table caption {
-	margin-bottom: 2rem;
-}
