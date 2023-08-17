@@ -1,5 +1,9 @@
+import { calculate, calculate1, calculate2, calculate3, sayHello, myFavouriteColor } from './calculate.js'
+import podatek from './calculate.js'
+import * as nowaNazwa from './calculate.js'
 const firstName = 'Paweł Haraf'
 const age = 37
+
 
 console.log(`Cześć :) Nazywam się ${firstName} i mam ${age} lat`)
 
@@ -17,39 +21,39 @@ console.log(content)
 content.innerHTML = `Zawartość paragrafu była pusta. Została uzupełniona poprzez javaScript. Jest to możliwe dzięki temu, że JS ma dostęp do różnych elementów w HTMLu czy CSSie poprzez DOM. Dzięki temu strony mogą być bardziej interaktywne.`
 
 // 05.06 javaScript: funkcje
-function calculate(myNumber) {
-	return myNumber * 7
-}
+// function calculate(myNumber) {
+// 	return myNumber * 7
+// }
 
 console.log(calculate(2))
 
-function calculate1(myNumber) {
-	myNumber = myNumber + 3
-	console.log(myNumber)
-	return myNumber * 7
-}
+// function calculate1(myNumber) {
+// 	myNumber = myNumber + 3
+// 	console.log(myNumber)
+// 	return myNumber * 7
+// }
 
 calculate1(1)
 
-const result = calculate1(2)
-console.log(result)
+// const result = calculate1(2)
+// console.log(result)
 
-function sayHello() {
-	console.log('hello')
-}
+// function sayHello() {
+// 	console.log('hello')
+// }
 
 sayHello()
 
 // (fat) arrow funtion
-const calculate2 = myNumber => {
-	myNumber = myNumber + 3
-	console.log(myNumber)
-	return myNumber * 7
-}
+// const calculate2 = myNumber => {
+// 	myNumber = myNumber + 3
+// 	console.log(myNumber)
+// 	return myNumber * 7
+// }
 
 calculate2(1)
 
-const calculate3 = myNumber => (myNumber + 4) * 7
+// const calculate3 = myNumber => (myNumber + 4) * 7
 console.log(calculate3(2))
 
 // 05.07 javaScript: obiekt
@@ -166,3 +170,11 @@ hamburger.addEventListener('click', () => {
 	const navigation = document.querySelector('.navigation--js')
 	navigation.classList.toggle('navigation--open')
 })
+
+// 08.03 javaScript: import/export
+
+console.log(myFavouriteColor)
+console.log(podatek)
+console.log(nowaNazwa)
+console.log(nowaNazwa.calculate(2))
+console.log(nowaNazwa.myFavouriteColor)
