@@ -1,6 +1,8 @@
 import { calculate, calculate1, calculate2, calculate3, sayHello, myFavouriteColor } from './calculate.js'
 import podatek from './calculate.js'
 import * as nowaNazwa from './calculate.js'
+import differenceInDays from 'date-fns/differenceInDays'
+
 const firstName = 'Paweł Haraf'
 const age = 37
 
@@ -178,3 +180,12 @@ console.log(podatek)
 console.log(nowaNazwa)
 console.log(nowaNazwa.calculate(2))
 console.log(nowaNazwa.myFavouriteColor)
+
+// 08.04 javaScript: import/export modułów
+
+const resultDays = differenceInDays(
+	new Date(2024, 4, 19, 21, 0),
+	new Date()
+)
+
+console.log(`Do moich urodzin pozostało ${resultDays} dni.`)
