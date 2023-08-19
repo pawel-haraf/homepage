@@ -2,6 +2,7 @@ import { calculate, calculate1, calculate2, calculate3, sayHello, myFavouriteCol
 import podatek from './calculate.js'
 import * as nowaNazwa from './calculate.js'
 import differenceInDays from 'date-fns/differenceInDays'
+import substract from './substract.js'
 
 const firstName = 'Paweł Haraf'
 const age = 37
@@ -186,3 +187,7 @@ console.log(nowaNazwa.myFavouriteColor)
 const resultDays = differenceInDays(new Date(2024, 4, 19, 21, 0), new Date())
 
 console.log(`Do moich urodzin pozostało ${resultDays} dni.`)
+
+// 08.10 Zadanie domowe
+console.log(substract(10, 5))
+substract(5, 2)
