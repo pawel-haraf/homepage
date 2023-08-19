@@ -6,7 +6,6 @@ import differenceInDays from 'date-fns/differenceInDays'
 const firstName = 'Paweł Haraf'
 const age = 37
 
-
 console.log(`Cześć :) Nazywam się ${firstName} i mam ${age} lat`)
 
 // moduł 3 DOMowe przedszkole
@@ -161,6 +160,7 @@ button.addEventListener('click', e => {
 	console.log('click, click')
 	const header = document.querySelector('.page-header__heading--js')
 	header.innerHTML = 'Zmieniony tekst nagłówka przez javaScript!!!'
+	document.documentElement.style.setProperty('--backgroundColor', 'tomato')
 })
 
 // 06.13 🍔 menu
@@ -183,9 +183,6 @@ console.log(nowaNazwa.myFavouriteColor)
 
 // 08.04 javaScript: import/export modułów
 
-const resultDays = differenceInDays(
-	new Date(2024, 4, 19, 21, 0),
-	new Date()
-)
+const resultDays = differenceInDays(new Date(2024, 4, 19, 21, 0), new Date())
 
 console.log(`Do moich urodzin pozostało ${resultDays} dni.`)

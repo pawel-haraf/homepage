@@ -1,5 +1,3 @@
-$text-color: blue;
-
 @mixin pseudoElement {
 	content: '';
 	background: red;
@@ -10,21 +8,15 @@ $text-color: blue;
 }
 
 .article {
-	color: $text-color;
+	background: var(--backgroundColor);
+	color: var(--textColor);
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	&--special {
-		background-color: yellow;
-	}
-	&__box {
-		color: #fff;
-	}
+	padding: 1rem;
 	&__content {
-		background-color: #1460aa;
-		color: #fff;
 		max-width: 80%;
 		padding: 16px;
 		text-align: left;
