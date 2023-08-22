@@ -190,4 +190,4 @@ console.log(`Do moich urodzin pozostało ${resultDays} dni.`)
 
 // 08.10 Zadanie domowe
 console.log(substract(10, 5))
-substract(5, 2)
+console.log(`Różnica między 10, a 5 to: ${substract(10, 5)}`)
