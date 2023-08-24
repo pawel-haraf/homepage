@@ -58,3 +58,16 @@ for (property in deathStar) {
 for (let element of elements) {
 	console.log(element)
 }
+
+let myNumber = 13
+
+const myFunction = a => {
+	const b = a * 3
+	const c = b * 7
+	return b + c
+}
+
+for (let i = 0; i < elements.length; i++) {
+	myNumber = myNumber * (i + 1)
+	myFunction(i)
+}
