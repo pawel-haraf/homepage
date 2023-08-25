@@ -9,7 +9,7 @@ const myObject1 = {
 }
 
 console.log(myObject1)
-myObject.hi
+myObject1.hi
 console.log(JSON.stringify(myObject1))
 const myJSON = JSON.stringify(myObject1)
 console.log(typeof myJSON)
