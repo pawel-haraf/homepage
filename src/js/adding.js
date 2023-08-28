@@ -1,9 +1,13 @@
 // homework 09 week
-const array = [1, 2, 3, 4, 5]
-let number = 0
+const numbers = [1, 2, 3, 4, 5]
 
-for (i = 0; i < array.length; i++) {
-	number = number + array[i]
+const sum = numbers => {
+	let total = 0
+
+	for (let partNumber of numbers) {
+		total = total + partNumber
+	}
+	return total
 }
 
-console.log(number)
+console.log(sum(numbers))

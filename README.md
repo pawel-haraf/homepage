@@ -4,14 +4,17 @@
 
 Nazywam się Paweł Haraf i uczestnicze w kursie [WTF: co ten frontend](https://cotenfrontend.pl). W ramach którego rozwijany jest ten projekt.
 
-## technologie
-1. Parcel
-2. npm
-3. HTML
-4. CSS
-5. SASS
-6. javaScript
+## Technologie wykorzystane w projekcie:
 
-## istalacja projektu
+1. HTML
+2. CSS
+3. SASS
+4. JavaScript
 
-npm install
+## Instalacja projektu:
+
+Aby uruchomić projekt najpierw wkonaj polecenie:
+
+- 'npm install',
+- 'npm run start' - aby uruchomić tryb developerski
+- 'npm run build' - aby zbudować projekt
