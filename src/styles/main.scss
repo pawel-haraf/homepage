@@ -1,3 +1,7 @@
+$text-color: blue;
+$tablet: 768px;
+$desktop: 1280px;
+
 @import 'components/article-grid.scss';
 @import 'components/article.scss';
 @import 'components/footer.scss';
@@ -11,11 +15,7 @@
 @import 'components/special.scss';
 @import '../../node_modules/normalize.css/normalize.css';
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap');
-
-$text-color: blue;
-$tablet: 768px;
-$desktop: 1280px;
-
+@import 'components/animations.scss';
 :root {
 	--textColor: #1a1a1a;
 	--backgroundColor: rgb(237, 237, 237);
