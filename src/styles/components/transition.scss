@@ -1,0 +1,15 @@
+.link {
+	color: #fff;
+	font-size: 3rem;
+	font-weight: bold;
+	transition: color 0.3s ease-in-out, transform 2s ease-in-out;
+	transform-origin: top right;
+	will-change: transform;
+	opacity: 0.5;
+	display: inline-block;
+}
+
+.link:hover {
+	opacity: 1;
+	transform: rotate(-15deg) translate(-2rem, 5rem) scale(1.5);
+}

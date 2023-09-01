@@ -15,6 +15,7 @@ $desktop: 1280px;
 @import 'components/special.scss';
 @import '../../node_modules/normalize.css/normalize.css';
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap');
+@import 'components/transition.scss';
 @import 'components/animations.scss';
 :root {
 	--textColor: #1a1a1a;
