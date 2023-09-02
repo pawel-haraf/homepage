@@ -6,7 +6,8 @@
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"cow": "cowsay siemka",
 		"start": "parcel src/*.html",
-		"build": "parcel build src/*.html --public-url=https://pawelharaf.netlify.app/"
+		"build": "parcel build src/*.html --public-url=https://pawelharaf.netlify.app/",
+		"build-mikrus": "parcel build src/*html --public-url=https://bedziemalybonus.cytr.us/"
 	},
 	"repository": {
 		"type": "git",
