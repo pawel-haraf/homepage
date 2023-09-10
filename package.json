@@ -21,6 +21,7 @@
 	"homepage": "https://github.com/pawel-haraf/homepage#readme",
 	"dependencies": {
 		"date-fns": "^2.30.0",
+		"js-confetti": "^0.11.0",
 		"normalize.css": "^8.0.1"
 	},
 	"devDependencies": {
