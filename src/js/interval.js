@@ -4,8 +4,10 @@ import JSConfetti from 'js-confetti'
 const jsConfetti = new JSConfetti()
 
 setInterval(() => {
-	console.log('1 minuta')
-	if (new Date().getHours().toLocaleString().slice(0, 10) === new Date().getMinutes().toLocaleString().slice(0, 10)) {
+	const curentDate = new Date()
+	console.log(curentDate.getHours())
+	console.log(curentDate.getMinutes())
+	if (curentDate.getHours() === curentDate.getMinutes()) {
 		console.log('Urodziny minuty')
 		jsConfetti.addConfetti()
 	}
