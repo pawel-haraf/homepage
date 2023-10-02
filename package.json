@@ -7,7 +7,8 @@
 		"cow": "cowsay siemka",
 		"start": "parcel src/*.html",
 		"build": "parcel build src/*.html --public-url=https://pawelharaf.netlify.app/",
-		"build-mikrus": "parcel build src/*html --public-url=https://bedziemalybonus.cytr.us/"
+		"build-mikrus": "parcel build src/*html --public-url=https://bedziemalybonus.cytr.us/",
+		"build-haraf": "parcel build src/*.html --public-url=https://homepage.pawel-haraf.pl/"
 	},
 	"repository": {
 		"type": "git",
